@@ -32,6 +32,8 @@ class MyApp extends StatelessWidget {
             onSecondary: Colors.white,
             tertiary: const Color(0xff2C3333)),
         primarySwatch: Colors.red,
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
       ),
       home: const HomePage(),
     );
