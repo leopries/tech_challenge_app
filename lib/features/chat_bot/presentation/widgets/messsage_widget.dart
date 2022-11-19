@@ -41,10 +41,7 @@ class _MessageWidgetState extends State<MessageWidget> {
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             ...(widget.isBot
-                ? [
-                    MessageAvatar(isBot: widget.isBot),
-                    const SizedBox(width: 10)
-                  ]
+                ? const [MessageAvatar(), SizedBox(width: 10)]
                 : [SizedBox(width: MediaQuery.of(context).size.width / 4)]),
             MessageBubble(
               left: widget.isBot,
@@ -73,10 +70,8 @@ class _MessageWidgetState extends State<MessageWidget> {
 }
 
 class MessageAvatar extends StatelessWidget {
-  final bool isBot;
   const MessageAvatar({
     Key? key,
-    this.isBot = true,
   }) : super(key: key);
 
   @override
@@ -85,24 +80,15 @@ class MessageAvatar extends StatelessWidget {
       width: 30,
       height: 30,
       decoration: BoxDecoration(
-        color: isBot
-            ? Theme.of(context).colorScheme.tertiary
-            : Theme.of(context).colorScheme.primary,
+        color: Theme.of(context).colorScheme.tertiary,
         shape: BoxShape.circle,
       ),
       child: Padding(
-        padding: const EdgeInsets.all(3.0),
-        child: isBot
-            ? Image.asset(
-                "assets/images/robot-avatar.png",
-                filterQuality: FilterQuality.high,
-              )
-            : Icon(
-                Icons.person_outline,
-                color: Theme.of(context).colorScheme.tertiary,
-                size: 16,
-              ),
-      ),
+          padding: const EdgeInsets.all(3.0),
+          child: Image.asset(
+            "assets/images/robot-avatar.png",
+            filterQuality: FilterQuality.high,
+          )),
     );
   }
 }

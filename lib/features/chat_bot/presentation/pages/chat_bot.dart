@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tech_challenge_app/features/chat_bot/presentation/widgets/chat_bot_nav_bar.dart';
 import 'package:tech_challenge_app/features/chat_bot/presentation/widgets/chat_widget.dart';
+import 'package:tech_challenge_app/features/chat_bot/presentation/widgets/option_grid.dart';
 
 class ChatBot extends StatelessWidget {
   const ChatBot({Key? key}) : super(key: key);
@@ -13,8 +14,8 @@ class ChatBot extends StatelessWidget {
           child: Column(
         children: const [
           ChatBotNavBar(),
-          Expanded(child: ChatWidget())
-          // Options
+          Expanded(child: ChatWidget()),
+          OptionGrid(),
         ],
       )),
     );
