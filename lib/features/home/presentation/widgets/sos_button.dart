@@ -6,8 +6,8 @@ class SOSButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 100,
-      height: 40,
+      width: 84,
+      height: 39,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(50),
         color: Theme.of(context).colorScheme.secondary,
@@ -17,7 +17,7 @@ class SOSButton extends StatelessWidget {
         "SOS",
         style: TextStyle(
           color: Theme.of(context).colorScheme.primary,
-          fontSize: 18,
+          fontSize: 16,
           fontWeight: FontWeight.bold,
         ),
       )),
