@@ -25,12 +25,9 @@ class TreeTraverser {
     traversedNodes.add(_rootNode);
   }
 
-  TreeNode get currentNode => _rootNode;
+  TreeNode get currentNode => _currentNode;
 
   DecisionOption? get lastSelectedOption => _lastSelectedOption;
-
-  /// The selectable options from the current node.
-  List<DecisionOption> get currentOptions => _rootNode.options ?? [];
 
   /// Reverts the last step and returns the current node after removal.
   TreeNode moveStepBack() {
@@ -51,13 +48,12 @@ class TreeTraverser {
   }
 
   /// Returns the avaialble options from the current node.
-  List<DecisionOption> get availableOptions => _currentNode.options ?? [];
+  List<DecisionOption> get availableOptions => _currentNode.options;
 
   /// Choose an option from the current node and returns the node that is
   /// reached by chosing the option.
   TreeNode chooseOption(DecisionOption option) {
-    if (_currentNode.options == null ||
-        !_currentNode.options!.contains(option)) {
+    if (!_currentNode.options.contains(option)) {
       throw Exception(
           "The passed option is not an option for the current node.");
     }

@@ -13,7 +13,7 @@ class TreeNode {
   final String? question;
 
   // Possible options to be taken. Null/Empty if no options exist
-  List<DecisionOption>? options;
+  List<DecisionOption> options;
 
   /// An (optional) finite outcome.
   final FiniteDecisionOutcome? decisionOutcome;
@@ -24,7 +24,7 @@ class TreeNode {
       {required this.id,
       required this.isRoot,
       this.question,
-      this.options,
+      this.options = const [],
       this.description,
       this.decisionOutcome});
 
