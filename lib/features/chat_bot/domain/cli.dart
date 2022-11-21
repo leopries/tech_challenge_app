@@ -16,22 +16,22 @@ void main() {
 
 void numberCLI(TreeTraverser traverser) {
   while (traverser.areOptionsAvailableFromCurrentNode()) {
-    print(traverser.currentNode.question);
+    stdout.write(traverser.currentNode.question);
     var options = traverser.availableOptions;
     for (int i = 1; i <= options.length; i++) {
-      print("($i): ${options.elementAt(i - 1).description!.text}");
+      stdout.write("($i): ${options.elementAt(i - 1).description!.text}");
     }
     String? chosenOptionStr = stdin.readLineSync();
     int chosenOptionNumber = int.parse(chosenOptionStr!);
     if (chosenOptionNumber > options.length) {
-      print("Failure, wrong number");
+      stdout.write("Failure, wrong number");
       continue;
     }
 
     traverser.chooseOption(options.elementAt(chosenOptionNumber - 1));
   }
 
-  print(traverser.getDecisionOutcome());
+  stdout.write(traverser.getDecisionOutcome());
 }
 
 void traverserCLI(TreeTraverser traverser) {
@@ -78,6 +78,6 @@ void traverserCLI(TreeTraverser traverser) {
         result = traverser.availableOptions.toString();
         break;
     }
-    print(result);
+    stdout.write(result);
   }
 }

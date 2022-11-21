@@ -32,12 +32,14 @@ TreeNode getRootTreeNode(String nodesPath, String optionsPath) {
   List<DecisionOptionDTO> decisionOptionsDTO =
       parseElementsFromFilePath<DecisionOptionDTO>(optionsPath);
 
-  // if there is no root node, we cannot construct a tree
-  TreeNode? rootNode =
-      firstWhereOrNull(nodesWithoutOptions, (element) => element.isRoot);
-  if (rootNode == null) {
-    throw Exception("No node is defined with {'isRoot': true}.");
+  // if there is not exactly one root node, we cannot construct a tree
+  Iterable treeNodeCandidates =
+      nodesWithoutOptions.where((element) => element.isRoot);
+  if (treeNodeCandidates.length != 1) {
+    throw Exception(
+        "Not exactly one node contains {'isRoot': true}, but ${treeNodeCandidates.length}");
   }
+  TreeNode rootNode = treeNodeCandidates.first;
 
   // resolves reference for both startNode and endNode in DecisionOption
   List<DecisionOption> resolvedOptions = [];
@@ -114,7 +116,7 @@ List<T> parseElementsFromString<T>(String jsonInput) {
       throw Exception("Given type is not supported for JSON parsing.");
   }
 
-  Iterable mapObjects = jsonDecode(jsonInput);
+  List mapObjects = jsonDecode(jsonInput);
   try {
     return List<T>.from(mapObjects.map((e) => factoryMethod(e)));
   } catch (e) {
