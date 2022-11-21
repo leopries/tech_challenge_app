@@ -1,0 +1,44 @@
+[
+  {
+    "id": "0",
+    "isRoot": true,
+    "question": "A or B or C?"
+  },
+  {
+    "id": "1",
+    "question": "A1 or A2 or A3?"
+  },
+  {
+    "id": "2",
+    "question": "B1 or B2?"
+  },
+  {
+    "id": "3",
+    "outcome": {
+      "successful": true,
+      "outcomeResult": "A(A2XY)*A1"
+    }
+  },
+  {
+    "id": "4",
+    "question": "X?"
+  },
+  {
+    "id": "5",
+    "outcome": {
+      "successful": true,
+      "outcomeResult": "A(A2XY)*A2"
+    }
+  },
+  {
+    "id": "6",
+    "question": "Y?"
+  },
+  {
+    "id": "7",
+    "outcome": {
+      "successful": false,
+      "outcomeResult": "(BB1)*(BB2|C)"
+    }
+  }
+]

@@ -1,0 +1,82 @@
+[
+    {
+        "id": "e01", 
+        "startNodeId": "0",
+        "endNodeId": "1",
+        "description": {
+            "text": "A"
+        }
+      },
+      {
+        "id": "e02", 
+        "startNodeId": "0",
+        "endNodeId": "2",
+        "description": {
+            "text": "B"
+        }
+      },
+      {
+        "id": "e07", 
+        "startNodeId": "0",
+        "endNodeId": "7",
+        "description": {
+            "text": "C"
+        }
+      },
+      {
+        "id": "e13", 
+        "startNodeId": "1",
+        "endNodeId": "3",
+        "description": {
+            "text": "A1"
+        }
+      },
+      {
+        "id": "e14", 
+        "startNodeId": "1",
+        "endNodeId": "4",
+        "description": {
+            "text": "A2"
+        }
+      },
+      {
+        "id": "e15", 
+        "startNodeId": "1",
+        "endNodeId": "5",
+        "description": {
+            "text": "A3"
+        }
+      },
+      {
+        "id": "e20", 
+        "startNodeId": "2",
+        "endNodeId": "0",
+        "description": {
+            "text": "B1"
+        }
+      },
+      {
+        "id": "e27", 
+        "startNodeId": "2",
+        "endNodeId": "7",
+        "description": {
+            "text": "B2"
+        }
+      },
+      {
+        "id": "e46", 
+        "startNodeId": "4",
+        "endNodeId": "6",
+        "description": {
+            "text": "X"
+        }
+      },
+      {
+        "id": "e61", 
+        "startNodeId": "6",
+        "endNodeId": "1",
+        "description": {
+            "text": "Y"
+        }
+      }
+]
