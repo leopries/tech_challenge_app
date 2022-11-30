@@ -1,0 +1,34 @@
+[
+  {
+    "id": "n0",
+    "isRoot": true,
+    "description": "Beschreibung",
+    "question": "Wurde dir körperlicher/geistiger Schaden zugefügt?"
+  },
+  {
+    "id": "n1.1",
+    "description": "Beschreibung",
+    "question": "Mit einem Gegenstand?"
+  },
+  {
+    "id": "n1.2",
+    "description": "Beschreibung",
+    "outcome": { "successful": false }
+  },
+  {
+    "id": "n2.1",
+    "description": "Beschreibung",
+    "outcome": {
+      "successful": true,
+      "outcomeResult": "Schwere Körperverletzung"
+    }
+  },
+  {
+    "id": "n2.2",
+    "description": "Beschreibung",
+    "outcome": {
+      "successful": false,
+      "outcomeResult": "Leichte Körperverletzung"
+    }
+  }
+]

@@ -16,8 +16,8 @@ void main() {
 
   n(int number) => helper.node(number);
 
-  setUp(() {
-    actualRootNode = getRootTreeNode(nodesFilePath, edgesFilePath);
+  setUp(() async {
+    actualRootNode = await getRootTreeNode(nodesFilePath, edgesFilePath);
     helper = TreeBuilderHelper();
   });
 

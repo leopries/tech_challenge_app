@@ -1,0 +1,34 @@
+[
+  {
+    "id": "op1.1", 
+    "startNodeId": "n0",
+    "endNodeId": "n1.1",
+    "description": {
+        "text": "Ja"
+    }
+  },
+  {
+    "id": "op1.2", 
+    "startNodeId": "n0",
+    "endNodeId": "n1.2",
+    "description": {
+        "text": "Nein"
+    }
+  },
+  {
+    "id": "op2.1", 
+    "startNodeId": "n1.1",
+    "endNodeId": "n2.1",
+    "description": {
+        "text": "Ja"
+    }
+  },
+  {
+    "id": "op2.2", 
+    "startNodeId": "n1.1",
+    "endNodeId": "n2.2",
+    "description": {
+        "text": "Nein"
+    }
+  }
+]

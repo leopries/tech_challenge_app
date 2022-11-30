@@ -6,8 +6,8 @@ import 'package:tech_challenge_app/features/chat_bot/domain/tree_traverser.dart'
 import 'entities/tree_node.dart';
 
 /// Run via 'dart cli.dart'
-void main() {
-  TreeNode exampleRootNode = TreeDataStore.createExemplaryTree();
+Future<void> main() async {
+  TreeNode exampleRootNode = await TreeDataStore.createExemplaryTree();
   TreeTraverser traverser = TreeTraverser(exampleRootNode);
 
   // traverserCLI(traverser);
@@ -18,6 +18,7 @@ void numberCLI(TreeTraverser traverser) {
   while (traverser.areOptionsAvailableFromCurrentNode()) {
     stdout.write(traverser.currentNode.question);
     var options = traverser.availableOptions;
+
     for (int i = 1; i <= options.length; i++) {
       stdout.write("($i): ${options.elementAt(i - 1).description!.text}");
     }

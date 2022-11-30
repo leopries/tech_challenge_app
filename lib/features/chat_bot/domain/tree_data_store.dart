@@ -5,13 +5,12 @@ import 'entities/tree_node.dart';
 
 /// Store that creates (examplary) decision trees.
 class TreeDataStore {
-  static TreeNode createExemplaryTree() {
+  static Future<TreeNode> createExemplaryTree() async {
     String jsonExamplesDir = "../data/json_examples";
     if (!Directory.current.path.endsWith("/domain")) {
-      throw Exception(
-          "Either change the above path or current working directoy.");
+      jsonExamplesDir = "assets/json_examples";
     }
-    return getRootTreeNode("$jsonExamplesDir/nodes.json",
+    return await getRootTreeNode("$jsonExamplesDir/nodes.json",
         "$jsonExamplesDir/decision_options.json");
   }
 }

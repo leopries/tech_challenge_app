@@ -10,6 +10,8 @@ import 'dtos/decision_option_dto.dart';
 import 'dtos/decision_outcome_dto.dart';
 import 'dtos/tree_node_dto.dart';
 
+import 'package:flutter/services.dart' show rootBundle;
+
 // TODO: replace with package method if not used in CLI
 T? firstWhereOrNull<T>(Iterable<T> iterable, bool Function(T element) test) {
   for (var element in iterable) {
@@ -19,9 +21,9 @@ T? firstWhereOrNull<T>(Iterable<T> iterable, bool Function(T element) test) {
 }
 
 /// Constructs a tree and returns the root node for given path for nodes and options.
-TreeNode getRootTreeNode(String nodesPath, String optionsPath) {
+Future<TreeNode> getRootTreeNode(String nodesPath, String optionsPath) async {
   List<TreeNodeDTO> nodesDTO =
-      parseElementsFromFilePath<TreeNodeDTO>(nodesPath);
+      await parseElementsFromFilePath<TreeNodeDTO>(nodesPath);
   List<TreeNode> nodesWithoutOptions = List<TreeNode>.from(nodesDTO.map((e) =>
       TreeNode(
           id: e.id,
@@ -30,7 +32,7 @@ TreeNode getRootTreeNode(String nodesPath, String optionsPath) {
           description: e.description,
           question: e.question)));
   List<DecisionOptionDTO> decisionOptionsDTO =
-      parseElementsFromFilePath<DecisionOptionDTO>(optionsPath);
+      await parseElementsFromFilePath<DecisionOptionDTO>(optionsPath);
 
   // if there is not exactly one root node, we cannot construct a tree
   Iterable treeNodeCandidates =
@@ -87,13 +89,19 @@ DecisionOptionDescription descriptionByDTO(DecisionOptionDescriptionDTO dto) {
   return DecisionOptionDescription(text: dto.text);
 }
 
-List<T> parseElementsFromFilePath<T>(String filePath) {
-  File file = File(filePath);
-  if (!file.existsSync()) {
-    throw Exception("Input file does not exist: $filePath");
+Future<List<T>> parseElementsFromFilePath<T>(String filePath) async {
+  String data;
+  if (Platform.isIOS || Platform.isAndroid) {
+    data = await rootBundle.loadString(filePath);
+  } else {
+    File file = File(filePath);
+    if (!file.existsSync()) {
+      throw Exception("Input file does not exist: $filePath");
+    }
+
+    data = file.readAsStringSync();
   }
 
-  String data = file.readAsStringSync();
   return parseElementsFromString<T>(data);
 }
 
