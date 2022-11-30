@@ -4,7 +4,7 @@ import 'package:simple_shadow/simple_shadow.dart';
 class OptionItem extends StatefulWidget {
   final String text;
   final String imgPath;
-  final Function() onTap;
+  final Function(BuildContext context) onTap;
 
   const OptionItem({
     Key? key,
@@ -27,7 +27,7 @@ class _OptionItemState extends State<OptionItem> {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: widget.onTap,
+      onTap: () => widget.onTap(context),
       onTapDown: (_) => press(up: false),
       onTapUp: (_) => press(up: true),
       onTapCancel: () => press(up: true),
