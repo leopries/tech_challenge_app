@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:tech_challenge_app/core/widgets/option_item.dart';
 
+import '../../../../core/widgets/option_item.dart';
 import '../bloc/chat_bot_bloc.dart';
 
 class OptionGrid extends StatelessWidget {
@@ -23,13 +23,9 @@ class OptionGrid extends StatelessWidget {
             constraints: const BoxConstraints(maxHeight: 300),
             child: BlocBuilder<ChatBotBloc, ChatBotState>(
               builder: (context, state) {
-                return GridView.count(
-                  scrollDirection: Axis.horizontal,
-                  childAspectRatio: 1,
-                  crossAxisSpacing: 20,
-                  mainAxisSpacing: 20,
-                  shrinkWrap: true,
-                  crossAxisCount: 2,
+                return Wrap(
+                  spacing: 20,
+                  runSpacing: 20,
                   children: buildChildrenFromState(state),
                 );
               },

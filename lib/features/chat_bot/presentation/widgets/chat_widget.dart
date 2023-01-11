@@ -1,22 +1,32 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:tech_challenge_app/features/chat_bot/domain/entities/chat_message.dart';
-import 'package:tech_challenge_app/features/chat_bot/presentation/bloc/chat_bot_bloc.dart';
-import 'package:tech_challenge_app/features/chat_bot/presentation/widgets/messsage_widget.dart';
 
+import '../../domain/entities/chat_message.dart';
 import '../bloc/chat/chat_bloc.dart';
+import '../bloc/chat_bot_bloc.dart';
+import 'messsage_widget.dart';
 
 class ChatWidget extends StatelessWidget {
-  const ChatWidget({Key? key}) : super(key: key);
+  final ScrollController _scrollController = ScrollController();
+
+  ChatWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20),
-      child: BlocBuilder<ChatBloc, ChatState>(
+      child: BlocConsumer<ChatBloc, ChatState>(
         bloc: BlocProvider.of<ChatBotBloc>(context).chatBloc,
+        listener: (context, state) {
+          _scrollController.animateTo(
+            _scrollController.position.maxScrollExtent,
+            duration: const Duration(milliseconds: 300),
+            curve: Curves.easeOut,
+          );
+        },
         builder: (context, state) {
           return ListView.builder(
+            controller: _scrollController,
             itemCount: state.chatMessages.length,
             itemBuilder: (context, index) {
               final message = state.chatMessages[index];

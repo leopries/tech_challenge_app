@@ -34,7 +34,7 @@ class _MessageWidgetState extends State<MessageWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: 10.0),
+      padding: const EdgeInsets.only(top: 10.0),
       child: ConstrainedBox(
         constraints: const BoxConstraints(minWidth: 100),
         child: Row(
