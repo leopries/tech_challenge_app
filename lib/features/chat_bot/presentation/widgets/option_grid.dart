@@ -9,30 +9,32 @@ class OptionGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text(
-          'choose one option',
-          style: TextStyle(
-            color: Theme.of(context).colorScheme.tertiary.withOpacity(0.3),
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: 10),
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(maxHeight: 300),
-            child: BlocBuilder<ChatBotBloc, ChatBotState>(
-              builder: (context, state) {
-                return Wrap(
-                  spacing: 20,
-                  runSpacing: 20,
-                  children: buildChildrenFromState(state),
-                );
-              },
+    return BlocBuilder<ChatBotBloc, ChatBotState>(
+      builder: (context, state) {
+        if (state is ChatBotLoaded && state.treeNode.options.isEmpty) {
+          return const SizedBox.shrink();
+        }
+        return Column(
+          children: [
+            Text(
+              'choose one option',
+              style: TextStyle(
+                color: Theme.of(context).colorScheme.tertiary.withOpacity(0.3),
+              ),
             ),
-          ),
-        ),
-      ],
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10),
+              child: ConstrainedBox(
+                  constraints: const BoxConstraints(maxHeight: 300),
+                  child: Wrap(
+                    spacing: 20,
+                    runSpacing: 20,
+                    children: buildChildrenFromState(state),
+                  )),
+            ),
+          ],
+        );
+      },
     );
   }
 

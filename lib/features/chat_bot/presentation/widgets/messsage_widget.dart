@@ -30,7 +30,10 @@ class _MessageWidgetState extends State<MessageWidget> {
 
     if (widget.showLoadingAnimation) {
       Future.delayed(loadingDuration).then((value) {
-        setState(() => showChild = true);
+        if (mounted) {
+          setState(() => showChild = true);
+        }
+
         Future.delayed(const Duration(milliseconds: 500)).then(
           (value) => widget.scrollController.animateTo(
             widget.scrollController.position.maxScrollExtent,
