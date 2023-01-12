@@ -5,11 +5,14 @@ class MessageWidget extends StatefulWidget {
   final Widget child;
   final bool showLoadingAnimation;
   final bool isBot;
+  final ScrollController scrollController;
   const MessageWidget({
     Key? key,
     required this.child,
     this.showLoadingAnimation = true,
     required this.isBot,
+    required this.scrollController,
+    required,
   }) : super(key: key);
 
   @override
@@ -24,17 +27,32 @@ class _MessageWidgetState extends State<MessageWidget> {
   @override
   void initState() {
     showChild = !widget.showLoadingAnimation;
+
     if (widget.showLoadingAnimation) {
-      Future.delayed(loadingDuration)
-          .then((value) => setState(() => showChild = true));
+      Future.delayed(loadingDuration).then((value) {
+        setState(() => showChild = true);
+        Future.delayed(const Duration(milliseconds: 500)).then(
+          (value) => widget.scrollController.animateTo(
+            widget.scrollController.position.maxScrollExtent,
+            duration: const Duration(milliseconds: 300),
+            curve: Curves.easeOut,
+          ),
+        );
+      });
     }
+    WidgetsBinding.instance
+        .addPostFrameCallback((_) => widget.scrollController.animateTo(
+              widget.scrollController.position.maxScrollExtent,
+              duration: const Duration(milliseconds: 300),
+              curve: Curves.easeOut,
+            ));
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 10.0),
+      padding: const EdgeInsets.only(top: 7.0, bottom: 7),
       child: ConstrainedBox(
         constraints: const BoxConstraints(minWidth: 100),
         child: Row(

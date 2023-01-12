@@ -27,21 +27,25 @@ class ChatWidget extends StatelessWidget {
         builder: (context, state) {
           return ListView.builder(
             controller: _scrollController,
+            cacheExtent: 1000,
             itemCount: state.chatMessages.length,
             itemBuilder: (context, index) {
               final message = state.chatMessages[index];
               return MessageWidget(
                 key: ValueKey(message.id),
+                scrollController: _scrollController,
                 isBot: message.owner == MessageOwner.robot,
                 showLoadingAnimation: message.owner == MessageOwner.robot,
-                child: Text(
-                  message.text,
-                  style: TextStyle(
-                    color: index % 2 == 0
-                        ? Theme.of(context).colorScheme.tertiary
-                        : Theme.of(context).colorScheme.primary,
-                    fontWeight: FontWeight.w500,
-                    fontSize: 15,
+                child: RichText(
+                  text: TextSpan(
+                    style: TextStyle(
+                      color: index % 2 == 0
+                          ? Theme.of(context).colorScheme.tertiary
+                          : Theme.of(context).colorScheme.primary,
+                      fontWeight: FontWeight.w500,
+                      fontSize: 15,
+                    ),
+                    children: _buildTextSpans(message.text),
                   ),
                 ),
               );
@@ -50,5 +54,30 @@ class ChatWidget extends StatelessWidget {
         },
       ),
     );
+  }
+
+  List<TextSpan> _buildTextSpans(String text) {
+    final pattern = RegExp(r'\*(.+?)\*');
+    final matches = pattern.allMatches(text);
+    int currentPosition = 0;
+    final spans = <TextSpan>[];
+    for (Match match in matches) {
+      if (match.start > currentPosition) {
+        spans.add(TextSpan(
+          text: text.substring(currentPosition, match.start),
+        ));
+      }
+      spans.add(TextSpan(
+        text: match.group(1),
+        style: const TextStyle(fontWeight: FontWeight.bold),
+      ));
+      currentPosition = match.end;
+    }
+    if (currentPosition < text.length) {
+      spans.add(TextSpan(
+        text: text.substring(currentPosition),
+      ));
+    }
+    return spans;
   }
 }

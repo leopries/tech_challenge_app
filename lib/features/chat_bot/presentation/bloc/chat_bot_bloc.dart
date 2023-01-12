@@ -3,12 +3,13 @@ import 'dart:async';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:tech_challenge_app/features/chat_bot/domain/entities/chat_message.dart';
-import 'package:tech_challenge_app/features/chat_bot/domain/entities/decision_option.dart';
-import 'package:tech_challenge_app/features/chat_bot/domain/entities/tree_node.dart';
-import 'package:tech_challenge_app/features/chat_bot/domain/tree_traverser.dart';
-import 'package:tech_challenge_app/features/chat_bot/presentation/bloc/chat/chat_bloc.dart';
 import 'package:uuid/uuid.dart';
+
+import '../../domain/entities/chat_message.dart';
+import '../../domain/entities/decision_option.dart';
+import '../../domain/entities/tree_node.dart';
+import '../../domain/tree_traverser.dart';
+import 'chat/chat_bloc.dart';
 
 part 'chat_bot_event.dart';
 part 'chat_bot_state.dart';
@@ -55,6 +56,18 @@ class ChatBotBloc extends Bloc<ChatBotEvent, ChatBotState> {
         ChatEventAddMessage(
           chatMessage: ChatMessage(
             text: newNode.decisionOutcome!.outcomeResult!,
+            owner: MessageOwner.robot,
+            id: const Uuid().v4(),
+          ),
+        ),
+      );
+    } else if (newNode.decisionOutcome != null &&
+        !newNode.decisionOutcome!.successful) {
+      chatBloc.add(
+        ChatEventAddMessage(
+          chatMessage: ChatMessage(
+            text:
+                "Tut mir leid, leider kann ich deine Beschreibung keinen Paragrafen zuordnen.\n\nBitte wende dich an eine Studentischen Rechtsberatungen um deine Frage zu klären",
             owner: MessageOwner.robot,
             id: const Uuid().v4(),
           ),

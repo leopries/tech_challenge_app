@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:tech_challenge_app/features/chat_bot/presentation/pages/chat_bot.dart';
 
 import '../../../../core/widgets/option_item.dart';
 import '../../../chat_bot/domain/entities/tree_node.dart';
 import '../../../chat_bot/domain/tree_data_store.dart';
+import '../../../chat_bot/presentation/pages/chat_bot.dart';
 
 class ScrollableOptionList extends StatelessWidget {
   const ScrollableOptionList({Key? key}) : super(key: key);
@@ -13,8 +13,8 @@ class ScrollableOptionList extends StatelessWidget {
     return SizedBox(
       height: 140,
       child: CustomScrollView(scrollDirection: Axis.horizontal, slivers: [
-        FutureBuilder<TreeNode>(
-            future: TreeDataStore.createExemplaryTree(),
+        FutureBuilder<List<TreeNode>>(
+            future: TreeDataStore.createTreeList(),
             builder: (context, snapshot) {
               if (snapshot.connectionState == ConnectionState.done) {
                 return SliverList(
@@ -27,11 +27,11 @@ class ScrollableOptionList extends StatelessWidget {
                       }
                       list.add(OptionItem(
                         imgPath: '',
-                        text: 'I experienced a violent assault',
+                        text: 'Sexual Assault',
                         onTap: (context) =>
                             Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => ChatBot(
-                            treeNode: snapshot.data!,
+                            treeNode: snapshot.data![0],
                           ),
                         )),
                       ));

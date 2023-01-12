@@ -13,4 +13,17 @@ class TreeDataStore {
     return await getRootTreeNode("$jsonExamplesDir/nodes.json",
         "$jsonExamplesDir/decision_options.json");
   }
+
+  static Future<List<TreeNode>> createTreeList() async {
+    String jsonExamplesDir = "../data/tree_data";
+    if (!Directory.current.path.endsWith("/domain")) {
+      jsonExamplesDir = "assets/tree_data";
+    }
+    List<TreeNode> list = await Future.wait([
+      getRootTreeNode("$jsonExamplesDir/sexual_assault/nodes.json",
+          "$jsonExamplesDir/sexual_assault/edges.json"),
+    ]);
+
+    return list;
+  }
 }
