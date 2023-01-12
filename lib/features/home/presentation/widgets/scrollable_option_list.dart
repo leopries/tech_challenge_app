@@ -26,7 +26,7 @@ class ScrollableOptionList extends StatelessWidget {
                         list.add(spacer);
                       }
                       list.add(OptionItem(
-                        imgPath: '',
+                        imgPath: 'assets/images/fist.png',
                         text: 'Sexual Assault',
                         onTap: (context) =>
                             Navigator.of(context).push(MaterialPageRoute(

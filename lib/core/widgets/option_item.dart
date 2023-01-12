@@ -60,7 +60,7 @@ class _OptionItemState extends State<OptionItem> {
                       color: fontColor,
                       sigma: 3,
                       child: Image.asset(
-                        'assets/images/fist.png',
+                        widget.imgPath,
                         color: fontColor,
                       ),
                     ),
