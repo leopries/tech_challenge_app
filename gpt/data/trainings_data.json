@@ -1,0 +1,510 @@
+[
+    {
+        "prompt": "Ich wurde belästigt, aber bin mir nicht sicher ob die Tat schon straflastig ist.",
+        "completion": "Sexualstraftaten"
+    },
+    {
+        "prompt": "Ich wurde vermutlich vergewaltigt aber bin mir nicht sicher. Kannst du mir genau sagen, ab wann es eine Vergewaltigung ist ?",
+        "completion": "Sexualstraftaten"
+    },
+    {
+        "prompt": "Gestern hat mir jemand beim nach Hauseweg eine Flasche gegen den Kopf geschlagen. Was soll ich tuen?",
+        "completion": "Körperverletzung"
+    },
+    {
+        "prompt": "Ich habe mich gestern geprügelt und bin mir nicht sicher, ob ich Anzeige erstatten soll.",
+        "completion": "Körperverletzung"
+    },
+    {
+        "prompt": "Ab wann ist eine ist eine Person nach Strafrecht strafbar ? Wie alt war die angreifende Person?",
+        "completion": "Verjährungsfrist"
+    },
+    {
+        "prompt": "Wie alt war die angreifende Person?",
+        "completion": "Verjährungsfrist"
+    },
+    {
+        "prompt": "Ich war vorgestern in München feiern und jemanden kenngelernt. Wir haben uns gut verstanden, aber irgendwann wollte ich nach Hause und er hat mich daraufhin unangenehm angefasst.",
+        "completion": "Sexualstraftaten"
+    },
+    {
+        "prompt": "Ich habe von meinem Expartner Drohungen erhalten, was kann ich tun?",
+        "completion": "Körperverletzung"
+    },
+    {
+        "prompt": "Ich wurde von meinem Chef sexuell belästigt, was sind meine rechtlichen Schritte?",
+        "completion": "Sexualstraftaten"
+    },
+    {
+        "prompt": "Ist es automatisch Notwehr wenn ich davor verletzt wurde?",
+        "completion": "Notwehr"
+    },
+    {
+        "prompt": "Ich wurde von einem Polizisten misshandelt, wie kann ich dagegen vorgehen?",
+        "completion": "Körperverletzung"
+    },
+    {
+        "prompt": "Ich habe eine Verletzung erlitten und denke, dass es die Schuld eines anderen ist, was soll ich tun?",
+        "completion": "Körperverletzung"
+    },
+    {
+        "prompt": "Ich wurde von meiner Familie misshandelt, aber es ist schon lange her. Kann ich immer noch Anzeige erstatten?",
+        "completion": "Verjährungsfrist"
+    },
+    {
+        "prompt": "Ich habe einen Unfall verursacht, aber bin mir nicht sicher, ob ich haftbar gemacht werden kann.",
+        "completion": "Notwehr"
+    },
+    {
+        "prompt": "Ich habe eine Person geschlagen, weil ich mich bedroht gefühlt habe, bin ich jetzt strafbar?",
+        "completion": "Notwehr"
+    },
+    {
+        "prompt": "Ich habe mich gegen einen Angreifer verteidigt, war das Notwehr?",
+        "completion": "Notwehr"
+    },
+    {
+        "prompt": "Ich wurde angegriffen und habe mich gewehrt, kann ich mich auf Notwehr berufen?",
+        "completion": "Notwehr"
+    },
+    {
+        "prompt": "Ich bin besorgt, dass ich eines Tages in eine Notwehrsituation geraten könnte, was soll ich tun?",
+        "completion": "Notwehr"
+    },
+    {
+        "prompt": "Ich bin unsicher, ob meine Handlungen als Notwehr gelten, kannst du mir das erklären?",
+        "completion": "Notwehr"
+    },
+    {
+        "prompt": "Ich habe jemanden verletzt, weil ich mich verteidigt habe, kann ich mich auf Notwehr berufen?",
+        "completion": "Notwehr"
+    },
+    {
+        "prompt": "Ich wurde bedroht und habe mich gewehrt, war das Notwehr?",
+        "completion": "Notwehr"
+    },
+    {
+        "prompt": "Ich habe mich gegen einen Angreifer gewehrt, aber es war keine Notwehrsituation, welche Konsequenzen drohen mir?",
+        "completion": "Notwehr"
+    },
+    {
+        "prompt": "Ich habe eine Waffe besessen, obwohl ich das nicht durfte, was wird jetzt passieren?",
+        "completion": "Verjährungsfrist"
+    },
+    {
+        "prompt": "Ich wurde vermutlich vergewaltigt, kannst du mir mehr Informationen darüber geben?",
+        "completion": "Sexualstraftaten"
+    },
+    {
+        "prompt": "Ich habe gehört, dass jemand vergewaltigt wurde, was soll ich tun?",
+        "completion": "Sexualstraftaten"
+    },
+    {
+        "prompt": "Ich habe Angst, dass ich vergewaltigt werde, gibt es Schutzmaßnahmen?",
+        "completion": "Sexualstraftaten"
+    },
+    {
+        "prompt": "Ich habe etwas über Vergewaltigung gelesen, was ist das genau?",
+        "completion": "Sexualstraftaten"
+    },
+    {
+        "prompt": "Ich habe von einer Vergewaltigung gehört, kannst du mir mehr darüber erzählen?",
+        "completion": "Sexualstraftaten"
+    },
+    {
+        "prompt": "Ich wurde gestern geschlagen, kannst du mir mehr Informationen darüber geben?",
+        "completion": "Körperverletzung"
+    },
+    {
+        "prompt": "Ich habe Angst, dass ich geschlagen werde, gibt es Schutzmaßnahmen?",
+        "completion": "Körperverletzung"
+    },
+    {
+        "prompt": "Ich habe gehört, dass jemand geschlagen wurde, was soll ich tun?",
+        "completion": "Körperverletzung"
+    },
+    {
+        "prompt": "Ich habe etwas über Schläge gelesen, was ist das genau?",
+        "completion": "Körperverletzung"
+    },
+    {
+        "prompt": "Ich habe von einer Schlägerei gehört, kannst du mir mehr darüber erzählen?",
+        "completion": "Körperverletzung"
+    },
+    {
+        "prompt": "Ist ein minderjähriger Täter straffrei?",
+        "completion": "Schuldunfähigkeit"
+    },
+    {
+        "prompt": "Kann eine Person wegen psychischen Erkrankung straffrei sein?",
+        "completion": "Schuldunfähigkeit"
+    },
+    {
+        "prompt": "Wann ist eine Person unzurechnungsfähig?",
+        "completion": "Schuldunfähigkeit"
+    },
+    {
+        "prompt": "Kann eine Person wegen geistiger Beeinträchtigung straffrei sein?",
+        "completion": "Schuldunfähigkeit"
+    },
+    {
+        "prompt": "Wie wird das Alter eines Täters im Strafrecht berücksichtigt?",
+        "completion": "Schuldunfähigkeit"
+    },
+    {
+        "prompt": "Kann eine Person wegen einer psychischen Störung strafrechtlich verantwortlich gemacht werden?",
+        "completion": "Schuldunfähigkeit"
+    },
+    {
+        "prompt": "Welche rechtlichen Konsequenzen hat es, wenn ein Täter unter 18 Jahre alt ist?",
+        "completion": "Schuldunfähigkeit"
+    },
+    {
+        "prompt": "Welche Auswirkungen hat geistige Beeinträchtigung auf die Strafverfolgung?",
+        "completion": "Schuldunfähigkeit"
+    },
+    {
+        "prompt": "Kann ein Täter wegen Altersschwäche straffrei bleiben?",
+        "completion": "Schuldunfähigkeit"
+    },
+    {
+        "prompt": "Wie wird psychische Gesundheit im Strafrecht berücksichtigt?",
+        "completion": "Schuldunfähigkeit"
+    },
+    {
+        "prompt": "Ist eine Person, die unter Drogen- oder Alkoholeinfluss stand, automatisch schuldunfähig?",
+        "completion": "Schuldunfähigkeit"
+    },
+    {
+        "prompt": "Kann eine Person, die unter einer geistigen Erkrankung leidet, voll schuldfähig sein?",
+        "completion": "Schuldunfähigkeit"
+    },
+    {
+        "prompt": "Ist Schizophrenie ein Grund für Schuldunfähigkeit?",
+        "completion": "Schuldunfähigkeit"
+    },
+    {
+        "prompt": "Kann das Alter eine Rolle bei der Beurteilung der Schuldfähigkeit spielen?",
+        "completion": "Schuldunfähigkeit"
+    },
+    {
+        "prompt": "Welche Rechtsfolgen hat Schuldunfähigkeit?",
+        "completion": "Schuldunfähigkeit"
+    },
+    {
+        "prompt": "Ist Schuldunfähigkeit ein Strafrechtlicher Freispruch?",
+        "completion": "Schuldunfähigkeit"
+    },
+    {
+        "prompt": "Welche Faktoren werden bei der Beurteilung der Schuldunfähigkeit berücksichtigt?",
+        "completion": "Schuldunfähigkeit"
+    },
+    {
+        "prompt": "Kann ein Täter, der unter einer geistigen Beeinträchtigung leidet, strafrechtlich verantwortlich gemacht werden?",
+        "completion": "Schuldunfähigkeit"
+    },
+    {
+        "prompt": "Inwieweit beeinflusst Schuldunfähigkeit die Dauer der Strafe?",
+        "completion": "Schuldunfähigkeit"
+    },
+    {
+        "prompt": "Kann ein Täter, der unter einer geistigen Beeinträchtigung leidet, zu einer Therapie verpflichtet werden?",
+        "completion": "Schuldunfähigkeit"
+    },
+    {
+        "prompt": "Ist eine Person, die unter einer psychischen Störung leidet, automatisch schuldunfähig?",
+        "completion": "Schuldunfähigkeit"
+    },
+    {
+        "prompt": "Kann eine Person, die unter geistiger Beeinträchtigung leidet, strafrechtlich verantwortlich gemacht werden?",
+        "completion": "Schuldunfähigkeit"
+    },
+    {
+        "prompt": "Ist eine Person, die unter Drogen- oder Alkoholeinfluss stand, immer schuldunfähig?",
+        "completion": "Schuldunfähigkeit"
+    },
+    {
+        "prompt": "Wie wird das Alter einer Person bei der Beurteilung der Schuldfähigkeit berücksichtigt?",
+        "completion": "Schuldunfähigkeit"
+    },
+    {
+        "prompt": "Kann eine Person, die unter einer geistigen Beeinträchtigung leidet, zur Rechenschaft gezogen werden?",
+        "completion": "Schuldunfähigkeit"
+    },
+    {
+        "prompt": "Welche Auswirkungen hat Schuldunfähigkeit auf das Strafmaß?",
+        "completion": "Schuldunfähigkeit"
+    },
+    {
+        "prompt": "Ich habe mich gegen einen Angreifer gewehrt, bin ich strafbar?",
+        "completion": "Notwehr"
+    },
+    {
+        "prompt": "Ich hatte Angst um meine Sicherheit, kann ich mich verteidigen?",
+        "completion": "Notwehr"
+    },
+    {
+        "prompt": "Ich habe jemanden im Notstand verletzt, was passiert jetzt?",
+        "completion": "Notwehr"
+    },
+    {
+        "prompt": "Ich habe jemanden in Notwehr verletzt, aber werde nun angeklagt. Was soll ich tun?",
+        "completion": "Notwehr"
+    },
+    {
+        "prompt": "Ich habe mich gegen einen Angreifer gewehrt, was sind meine rechtlichen Möglichkeiten?",
+        "completion": "Notwehr"
+    },
+    {
+        "prompt": "Ich habe mich gegen einen Angreifer zur Wehr gesetzt, kann ich strafrechtlich belangt werden?",
+        "completion": "Notwehr"
+    },
+    {
+        "prompt": "Ich habe jemanden in Notwehr verletzt, kann ich strafrechtlich belangt werden?",
+        "completion": "Notwehr"
+    },
+    {
+        "prompt": "Ich habe mich in einer bedrohlichen Situation gewehrt, bin ich strafbar?",
+        "completion": "Notwehr"
+    },
+    {
+        "prompt": "Ich habe mich gegen einen Angreifer gewehrt, bin ich schuldig?",
+        "completion": "Notwehr"
+    },
+    {
+        "prompt": "Ich habe jemanden im Notstand verletzt, habe ich eine Strafe zu erwarten?",
+        "completion": "Notwehr"
+    },
+    {
+        "prompt": "Kann ich mich gegen einen Angreifer wehren, ohne strafrechtlich belangt zu werden?",
+        "completion": "Notwehr"
+    },
+    {
+        "prompt": "Ist es erlaubt, Gewalt anzuwenden, wenn man sich in einer bedrohlichen Situation befindet?",
+        "completion": "Notwehr"
+    },
+    {
+        "prompt": "Ist es erlaubt, jemanden in Notwehr zu verletzen, um sich selbst zu schützen?",
+        "completion": "Notwehr"
+    },
+    {
+        "prompt": "Ist die Anwendung von Gewalt in einer Notwehrsituation strafbar?",
+        "completion": "Notwehr"
+    },
+    {
+        "prompt": "Wann ist die Verwendung von Gewalt im Rahmen der Selbstverteidigung erlaubt?",
+        "completion": "Notwehr"
+    },
+    {
+        "prompt": "Ich wurde gestern geschlagen, kannst du mir mehr Informationen darüber geben?",
+        "completion": "Körperverletzung"
+    },
+    {
+        "prompt": "Ich habe Angst, dass ich geschlagen werde, gibt es Schutzmaßnahmen?",
+        "completion": "Körperverletzung"
+    },
+    {
+        "prompt": "Ich habe gehört, dass jemand misshandelt wurde, was soll ich tun?",
+        "completion": "Körperverletzung"
+    },
+    {
+        "prompt": "Ich habe etwas über Gewalt gelesen, was ist das genau?",
+        "completion": "Körperverletzung"
+    },
+    {
+        "prompt": "Ich habe Verletzungen durch jemanden, der mich angegriffen hat. Was soll ich tun?",
+        "completion": "Körperverletzung"
+    },
+    {
+        "prompt": "Ich habe Anzeige wegen Körperverletzung erstattet. Was passiert jetzt?",
+        "completion": "Körperverletzung"
+    },
+    {
+        "prompt": "Ich habe Angst vor einer Misshandlung durch eine bestimmte Person, gibt es Schutzmaßnahmen?",
+        "completion": "Körperverletzung"
+    },
+    {
+        "prompt": "Ich wurde Opfer einer Gewalttat, wie kann ich mich schützen?",
+        "completion": "Körperverletzung"
+    },
+    {
+        "prompt": "Ich habe Anzeige wegen Körperverletzung erstattet. Was passiert jetzt?",
+        "completion": "Körperverletzung"
+    },
+    {
+        "prompt": "Ich habe Angst, dass ich von jemandem geschlagen werde, was kann ich tun?",
+        "completion": "Körperverletzung"
+    },
+    {
+        "prompt": "Ich habe Verletzungen durch jemanden, der mich angegriffen hat. Welche Schritte soll ich unternehmen?",
+        "completion": "Körperverletzung"
+    },
+    {
+        "prompt": "Ich wurde von jemandem misshandelt, wie kann ich mich wehren?",
+        "completion": "Körperverletzung"
+    },
+    {
+        "prompt": "Ich habe Angst, dass ich von jemandem geschlagen werde, welche Schutzmaßnahmen gibt es?",
+        "completion": "Körperverletzung"
+    },
+    {
+        "prompt": "Ich wurde Opfer einer Gewaltverbrechen, wie kann ich mich schützen?",
+        "completion": "Körperverletzung"
+    },
+    {
+        "prompt": "Ich wurde Opfer einer körperlichen Attacke, was soll ich tun?",
+        "completion": "Körperverletzung"
+    },
+    {
+        "prompt": "Ich wurde von jemandem verletzt, wie gehe ich damit um?",
+        "completion": "Körperverletzung"
+    },
+    {
+        "prompt": "Ich habe Angst, Opfer einer körperlichen Gewalt zu werden, welche Schritte sollte ich unternehmen?",
+        "completion": "Körperverletzung"
+    },
+    {
+        "prompt": "Ich bin Opfer von körperlicher Misshandlung geworden, welche Unterstützung kann ich erwarten?",
+        "completion": "Körperverletzung"
+    },
+    {
+        "prompt": "Ich wurde Opfer einer sexuellen Nötigung, welche Schritte soll ich unternehmen?",
+        "completion": "Sexualstraftaten"
+    },
+    {
+        "prompt": "Ich habe Angst, Opfer einer Vergewaltigung zu werden, welche Schutzmaßnahmen gibt es?",
+        "completion": "Sexualstraftaten"
+    },
+    {
+        "prompt": "Ich habe Anzeige wegen sexueller Belästigung erstattet, was passiert jetzt?",
+        "completion": "Sexualstraftaten"
+    },
+    {
+        "prompt": "Ich wurde Opfer eines sexuellen Übergriffs, welche Unterstützung kann ich erwarten?",
+        "completion": "Sexualstraftaten"
+    },
+    {
+        "prompt": "Ich habe Vermutungen, dass jemand sexuellen Missbrauch begangen hat, welche Schritte soll ich unternehmen?",
+        "completion": "Sexualstraftaten"
+    },
+    {
+        "prompt": "Ich bin Opfer einer sexuellen Gewalt geworden, wie kann ich mich schützen?",
+        "completion": "Sexualstraftaten"
+    },
+    {
+        "prompt": "Ich bin Opfer einer Vergewaltigung geworden, welche Strafen drohen dem Täter?",
+        "completion": "Sexualstraftaten"
+    },
+    {
+        "prompt": "Ich wurde Opfer einer sexuellen Nötigung, wie gehe ich damit um?",
+        "completion": "Sexualstraftaten"
+    },
+    {
+        "prompt": "Ich wurde Opfer einer Vergewaltigung, welche rechtlichen Schritte soll ich unternehmen?",
+        "completion": "Sexualstraftaten"
+    },
+    {
+        "prompt": "Ich habe Angst, Opfer von sexueller Belästigung zu werden, was kann ich tun?",
+        "completion": "Sexualstraftaten"
+    },
+    {
+        "prompt": "Ich wurde Opfer von sexuellem Missbrauch, welche Unterstützung kann ich erwarten?",
+        "completion": "Sexualstraftaten"
+    },
+    {
+        "prompt": "Ich habe Anzeige wegen sexueller Nötigung erstattet, was passiert jetzt?",
+        "completion": "Sexualstraftaten"
+    },
+    {
+        "prompt": "Ich wurde Opfer eines sexuellen Übergriffs, wie kann ich mich schützen?",
+        "completion": "Sexualstraftaten"
+    },
+    {
+        "prompt": "Ich habe Angst, Opfer von sexueller Gewalt zu werden, welche Schutzmaßnahmen gibt es?",
+        "completion": "Sexualstraftaten"
+    },
+    {
+        "prompt": "Ich wurde Opfer von sexueller Belästigung, welche Strafen drohen dem Täter?",
+        "completion": "Sexualstraftaten"
+    },
+    {
+        "prompt": "Ich wurde von jemandem sexuell genötigt, was soll ich tun?",
+        "completion": "Sexualstraftaten"
+    },
+    {
+        "prompt": "Ich habe Vermutungen, dass jemand sexuellen Missbrauch begangen hat, welche Schritte soll ich unternehmen?",
+        "completion": "Sexualstraftaten"
+    },
+    {
+        "prompt": "Ich bin Opfer einer sexuellen Gewalt geworden, welche Unterstützung kann ich erwarten?",
+        "completion": "Sexualstraftaten"
+    },
+    {
+        "prompt": "Wie lange dauert die Verjährungsfrist für eine Straftat?",
+        "completion": "Verjährungsfrist"
+    },
+    {
+        "prompt": "Ist die Verjährungsfrist für eine Straftat bereits abgelaufen?",
+        "completion": "Verjährungsfrist"
+    },
+    {
+        "prompt": "Wann beginnt die Verjährungsfrist für eine Straftat?",
+        "completion": "Verjährungsfrist"
+    },
+    {
+        "prompt": "Ist es möglich die Verjährungsfrist für eine Straftat zu verlängern?",
+        "completion": "Verjährungsfrist"
+    },
+    {
+        "prompt": "Wie wird die Verjährungsfrist für eine Straftat berechnet?",
+        "completion": "Verjährungsfrist"
+    },
+    {
+        "prompt": "Ich bin unsicher, ob die Verjährungsfrist für meinen Fall abgelaufen ist, kannst du mir das erklären?",
+        "completion": "Verjährungsfrist"
+    },
+    {
+        "prompt": "Kann die Verjährungsfrist für eine Straftat unterbrochen werden?",
+        "completion": "Verjährungsfrist"
+    },
+    {
+        "prompt": "Ich habe eine Anzeige wegen einer Straftat erstattet, aber es ist bereits viele Jahre her, kann die Staatsanwaltschaft immer noch ermitteln?",
+        "completion": "Verjährungsfrist"
+    },
+    {
+        "prompt": "Ich habe gehört, dass es eine Verjährungsfrist für Strafverfolgung gibt, kannst du mir mehr darüber erzählen?",
+        "completion": "Verjährungsfrist"
+    },
+    {
+        "prompt": "Wie lange dauert die Verjährungsfrist für eine Straftat?",
+        "completion": "Verjährungsfrist"
+    },
+    {
+        "prompt": "Ist die Verjährungsfrist für eine Straftat bereits abgelaufen?",
+        "completion": "Verjährungsfrist"
+    },
+    {
+        "prompt": "Wann beginnt die Verjährungsfrist für eine Straftat?",
+        "completion": "Verjährungsfrist"
+    },
+    {
+        "prompt": "Kann die Verjährungsfrist für eine Straftat verlängert werden?",
+        "completion": "Verjährungsfrist"
+    },
+    {
+        "prompt": "Gibt es Ausnahmen von der Verjährungsfrist für eine Straftat?",
+        "completion": "Verjährungsfrist"
+    },
+    {
+        "prompt": "Ist es möglich die Verjährungsfrist für eine Straftat zu unterbrechen?",
+        "completion": "Verjährungsfrist"
+    },
+    {
+        "prompt": "Kann die Verjährungsfrist für eine Straftat neu beginnen?",
+        "completion": "Verjährungsfrist"
+    },
+    {
+        "prompt": "Wie beeinflusst die Verjährungsfrist die Strafverfolgung?",
+        "completion": "Verjährungsfrist"
+    }
+]
