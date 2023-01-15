@@ -81,19 +81,11 @@ The second file holds information about the relationship between nodes, i.e. the
 ## Natural language processing model (NLP)
 We used an natural language processing model to classify the input text of the user into our 5 top level nodes: Schuldunfähigkeit,Körperverletzung, Sexualstraftaten, Notwehr, Verjährungsfrist. The model is trained on 120 examplitory prompts that contain 5-8 keywords for each node. 
 
-|    Schuldunfähigkeit           |    Notwehr        | Sexualstraftaten  |Körperverletzung | Verjährungsfrist |
-| ------------- |:-------------:| -----:|
-| Alter     | Selbstverteidigung | Vergewaltigung | |    |
-| Minderjährigkeit    | Notstand      |   sexueller Missbrauch | |    |
-| Unzurechnungsfähigkeit | Nothilfe     |    sexuelle Belästigung | |    |
-| geistige Beeinträchtigung |Gewaltanwendung    |    sexuelle Nötigung | |    |
-| sychische Erkrankung | Angriff    |    sexueller Übergriff | |    |
-| Strafminderung |   |    | |    |
-| Schuldfähigkeit |    |    | |    |
-| Unmündigkeit |     |    | |    |
-| Strafmindernde Schuldunfähigkeit |      |    | |    |
-| Schuldunfähigkeit durch Unmündigkeit |    |     | |    |
-
-
-
+|    Class           |    Keyword        
+| ------------- |:-------------:| 
+| Schuldunfähigkeit     | Alter,Minderjährigkeit, Unzurechnungsfähigkeit, geistige Beeinträchtigung, psychische Erkrankung, Strafminderung, Schuldfähigkeit, Unmündigkeit, Strafmindernde Schuldunfähigkeit, Schuldunfähigkeit durch Unmündigkeit | 
+| Notwehr    | Notstand      |  
+| Sexualstraftaten | Nothilfe     |  
+| Körperverletzung |Gewaltanwendung    |   
+| Verjährungsfrist | Angriff    |    
 
