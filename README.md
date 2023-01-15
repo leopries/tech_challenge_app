@@ -94,7 +94,7 @@ We used the davinci model since it is the most capable for NLP tasks. The model 
 {
   "prompt": "<USER_INPUT>",
   "model": "<FINE_TUNED_MODEL>",
-  "max_tokens": 9,
+  "max_tokens": 16,
   "temperature": 0,
   "top_p": 1,
   "n": 1,
@@ -102,7 +102,7 @@ We used the davinci model since it is the most capable for NLP tasks. The model 
 }
 ```
 Prompt is the user input, at the beginning of the conversation, that is classified into one of the 5 classes. The model parameter is the fine-tuned model we created.
-OpenAi works with tokens, which are the smallest units of text. The max_token parameter is set to 9 since Schuldunfähigkeit is the longest class name and has 9 tokens. This can be checked [here](https://beta.openai.com/tokenizer). The temperature parameter determines the randomness of the model, the higher the temperature, the more random the model is. We set it to 0 since we want to get the most likely class. Top_p determines the probability mass that the model considers, to choose the next token. Top_p is set to 1, since we want to get the most likely class. The n parameter defines the number of classes that are returned. We only want to get the most likely class, so it is set to 1. Logprobs defines if the log probabilities of the returned classes are returned. We do not need the log probabilities, so it is set to null. 
+OpenAi works with tokens, which are the smallest units of text. The max_token parameter is set to 16 since that is the maximum amount for a tokens combination of 2 nodes. This can be checked [here](https://beta.openai.com/tokenizer). The temperature parameter determines the randomness of the model, the higher the temperature, the more random the model is. We set it to 0 since we want to get the most likely class. Top_p determines the probability mass that the model considers, to choose the next token. Top_p is set to 1, since we want to get the most likely class. The n parameter defines the number of classes that are returned. We only want to get the most likely class, so it is set to 1. Logprobs defines if the log probabilities of the returned classes are returned. We do not need the log probabilities, so it is set to null. 
 
 To validate the model we can use the validation JSONL file and get a generated result file of the classifications. 
 ```bash
