@@ -79,7 +79,7 @@ The second file holds information about the relationship between nodes, i.e. the
 
 
 ## Natural language processing model (NLP)
-We used an GPT-3 as a natural language processing model to classify the input text of the user into our 5 top level nodes: Schuldunfähigkeit,Körperverletzung, Sexualstraftaten, Notwehr, Verjährungsfrist. The model is trained on 127 examplitory prompts that contain 5-8 keywords for each node. 
+We used an GPT-3 as a natural language processing model to classify the input text of the user into our 5 top level nodes: Schuldunfähigkeit,Körperverletzung, Sexualstraftaten, Notwehr, Verjährungsfrist. The model is trained on 127 examplitory prompts that contain 5-8 keywords for each node and was trained with the Few-shot (FS) method.
 
 |    Class           |    Keyword        
 | ------------- |:-------------:| 
