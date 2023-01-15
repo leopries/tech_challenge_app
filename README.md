@@ -104,6 +104,18 @@ We used the davinci model, since it is the most capable for NLP tasks.The model 
 Prompt is the user input, in the beginning of the conversation, that is classified into one of the 5 classes. The model parameter is the fine-tuned model we created.
 OpenAi works with tokens, which are the smallest units of text. The max_token parameter is set to 9, since Schuldunfähigkeit is the longest class name and has 9 tokens. This can be checked [here](https://beta.openai.com/tokenizer). The temperature parameter determines the randomness of the model, the higher the temperature, the more random the model is. We set it to 0,since we want to get the most likely class. Top_p determines the probability mass that the model considers to choose the next token. Top_p is set to 1, since we want to get the most likely class. The n paramter defines the number of classes that are returned. We only want to get the most likely class, so it is set to 1. Logprobs defines if the log probabilities of the returned classes are returned. We do not need the log probabilities, so it is set to null. 
 
+To validate the model we can use the validation jsonl file and get a generated result file of the classifications. 
+```bash
+openai api fine_tunes.create \
+  -t <TRAIN_FILE_ID_OR_PATH> \
+  -v <VALIDATION_FILE_OR_PATH> \
+  -m <MODEL> \
+  --compute_classification_metrics \
+  --classification_n_classes 5
+  ```
+The results of the classification can be found in the result/ folder.
+
+
 ### Steps to reproduce
 A documentation of the fine-tuning process can be found [here](https://beta.openai.com/docs/guides/fine-tuning). 
 
@@ -127,3 +139,5 @@ openai api fine_tunes.create -t trainings_data_prepared_train.jsonl -m davinci
 OpenAi offers 4 base models: ada, babbage, curie, davinci. The model are different in their capabilities andthere is a tradeoff between performance and price. 
 The fine-tuned model is saved in the OpenAI API.
 5. Now the model can be used to classify the user input into one of the 5 classes over the [Completions API](https://beta.openai.com/docs/api-reference/completions/create).
+
+
