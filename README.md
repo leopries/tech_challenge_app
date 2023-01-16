@@ -1,4 +1,58 @@
-# Digital assistance for victims of crimes
+<h1 align="center">
+  <br>
+  <a href="https://github.com/leopries/tech_challenge_app"><img src="https://raw.githubusercontent.com/leopries/tech_challenge_app/main/assets/images/logo.png?token=GHSAT0AAAAAAB4KWYBE433DAGEELAWIH2T4Y6FRBIA" alt="logo" width="200"></a>
+  <br>
+  Judgely
+  <br>
+</h1>
+
+Welcome to the Judgely, your First Contact Legal Advice App! This app is designed to help individuals who have experienced a crime or are unsure if they have experienced a crime to get a first idea of which paragraph of German law the crime may fall under. 
+
+## How to Use the App 
+
+1. Input a brief description of the situation into the app. 
+2. Our NLP model will provide a first prediction of what crime the situation may fall under. 
+3. You will then be asked a series of yes/no questions to help narrow down the prediction to an exact paragraph of German law. 
+4. Once the exact paragraph has been determined, you will be provided with the relevant information.
+5. If you need immediate assistance, you can use the SOS button to connect with the local police department or a lawyer at any time.
+
+We understand that experiencing a crime can be difficult and stressful, and our goal is to provide you with the information and resources you need to navigate the legal system as smoothly as possible.  If you have any questions or feedback, please do not hesitate to reach out to us.
+
+# Technical Description
+
+<p align="center">
+  <a href="#app-framework">App Framework</a> •
+  <a href="#domain-model">Domain Model</a> •
+  <a href="#natural-language-processing-model-nlp">NLP Model</a> •
+  <a href="#support">Support</a>
+</p>
+
+## App Framework
+
+The application is created with Flutter which is an open-source mobile application development framework created by Google. It is used to develop applications for Android, iOS, Linux, Mac, Windows, and the web. With Flutter, you can build beautiful, fast, and high-performance apps using a single codebase.
+
+### Install Flutter
+
+To run this app, you need to have Flutter installed on your computer. Here's how you can do that:
+
+1. Download the Flutter SDK from the [official website](https://flutter.dev/docs/get-started/install).
+2. Extract the downloaded archive to a directory on your computer.
+3. Add the `flutter` command to your PATH by following the instructions on the [official website](https://flutter.dev/docs/get-started/install/macos#update-your-path).
+4. Open a terminal and run the command `flutter doctor` to check for any dependencies that need to be installed.
+5. Once all dependencies are installed, you are ready to run the app.
+
+### How to run the App
+
+```bash
+# Clone this repository
+$ git clone https://github.com/leopries/tech_challenge_app.git
+
+# Go into the repository
+$ cd tech_challenge_app
+
+# Run the app
+$ flutter run
+```
 
 ## Domain model
 
@@ -140,4 +194,6 @@ OpenAi offers 4 base models: ada, babbage, curie, davinci. The models are differ
 The fine-tuned model is saved in the OpenAI API.
 5. Now the model can be used to classify the user input into one of the 5 classes over the [Completions API](https://beta.openai.com/docs/api-reference/completions/create).
 
-
+## Support
+If you need help, please send us an 
+<a href="mailto:leonardpries@icloud.com" target="_blank">E-Mail</a>
