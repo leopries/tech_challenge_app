@@ -75,3 +75,69 @@ The second file holds information about the relationship between nodes, i.e. the
   }
 ]
 ```
+
+
+
+## Natural language processing model (NLP)
+We used a GPT-3 as a natural language processing model to classify the input text of the user into our 5 top-level nodes: Schuldunfähigkeit, Körperverletzung, Sexualstraftaten, Notwehr, Verjährungsfrist. The model is trained on 127 exemplary prompts that contain 5-8 keywords for each node and the model was trained with the Few-shot (FS) method.
+
+|    Class           |    Keyword        
+| ------------- |:-------------:| 
+| Schuldunfähigkeit     | Alter,Minderjährigkeit, Unzurechnungsfähigkeit, geistige Beeinträchtigung, psychische Erkrankung, Strafminderung, Schuldfähigkeit, Unmündigkeit, Strafmindernde Schuldunfähigkeit, Schuldunfähigkeit durch Unmündigkeit | 
+| Notwehr    | Selbstverteidigung, Notstand, Nothilfe, Gewaltanwendung, Angriff      |  
+| Sexualstraftaten | Vergewaltigung, sexueller Missbrauch, sexuelle Belästigung, sexuelle Nötigung, sexueller Übergriff     |  
+| Körperverletzung |Schläge, Verletzungen, Misshandlung, Gewalt, Angriff    |   
+| Verjährungsfrist | Verjährung, Fristen, Verjährungsfristen, Strafverfolgung, Verjährungsbeginn    |    
+
+We used the davinci model since it is the most capable for NLP tasks. The model is hosted on the OpenAI API and can be accessed [here](https://api.openai.com/v1/engines/davinci/completions). We call the model with the following parameters: 
+```json
+{
+  "prompt": "<USER_INPUT>",
+  "model": "<FINE_TUNED_MODEL>",
+  "max_tokens": 16,
+  "temperature": 0,
+  "top_p": 1,
+  "n": 1,
+  "logprobs": null,
+}
+```
+Prompt is the user input, at the beginning of the conversation, that is classified into one of the 5 classes. The model parameter is the fine-tuned model we created.
+OpenAi works with tokens, which are the smallest units of text. The max_token parameter is set to 16 since that is the maximum amount for a tokens combination of 2 nodes. This can be checked [here](https://beta.openai.com/tokenizer). The temperature parameter determines the randomness of the model, the higher the temperature, the more random the model is. We set it to 0 since we want to get the most likely class. Top_p determines the probability mass that the model considers, to choose the next token. Top_p is set to 1, since we want to get the most likely class. The n parameter defines the number of classes that are returned. We only want to get the most likely class, so it is set to 1. Logprobs defines if the log probabilities of the returned classes are returned. We do not need the log probabilities, so it is set to null. 
+
+To validate the model we can use the validation JSONL file and get a generated result file of the classifications. 
+```bash
+openai api fine_tunes.create \
+  -t <TRAIN_FILE_ID_OR_PATH> \
+  -v <VALIDATION_FILE_OR_PATH> \
+  -m <MODEL> \
+  --compute_classification_metrics \
+  --classification_n_classes 5
+  ```
+The results of the classification can be found in the result/ folder.
+
+
+### Steps to reproduce
+The documentation of the fine-tuning process can be found [here](https://beta.openai.com/docs/guides/fine-tuning). 
+
+1. Install the OpenAI API: 
+```bash
+pip install --upgrade openai
+```
+2. Get an API key from OpenAI [here](https://beta.openai.com/docs/api-reference/authentication) and set up an environment variable: 
+```bash
+export OPENAI_API_KEY="<OPENAI_API_KEY>"
+```
+3. Convert the training data JSON into a JSONL file: 
+```bash
+openai tools fine_tunes.prepare_data -f trainings_data.json 
+```
+This generates a training and validation JSONL file out of the training data json file.
+4. Fine-tune the model with the training JSONL file: 
+```bash
+openai api fine_tunes.create -t trainings_data_prepared_train.jsonl -m davinci
+```
+OpenAi offers 4 base models: ada, babbage, curie, davinci. The models are different in their capabilities and there is a tradeoff between performance and price. 
+The fine-tuned model is saved in the OpenAI API.
+5. Now the model can be used to classify the user input into one of the 5 classes over the [Completions API](https://beta.openai.com/docs/api-reference/completions/create).
+
+

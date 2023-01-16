@@ -1,0 +1,24 @@
+{"prompt":"Ich wurde vermutlich vergewaltigt aber bin mir nicht sicher. Kannst du mir genau sagen, ab wann es eine Vergewaltigung ist ? ->","completion":" Sexualstraftaten"}
+{"prompt":"Gestern hat mir jemand beim nach Hauseweg eine Flasche gegen den Kopf geschlagen. Was soll ich tuen? ->","completion":" Körperverletzung"}
+{"prompt":"Ich habe eine Person geschlagen, weil ich mich bedroht gefühlt habe, bin ich jetzt strafbar? ->","completion":" Notwehr"}
+{"prompt":"Ich wurde bedroht und habe mich gewehrt, war das Notwehr? ->","completion":" Notwehr"}
+{"prompt":"Ich habe mich gegen einen Angreifer gewehrt, aber es war keine Notwehrsituation, welche Konsequenzen drohen mir? ->","completion":" Notwehr"}
+{"prompt":"Ich wurde vermutlich vergewaltigt, kannst du mir mehr Informationen darüber geben? ->","completion":" Sexualstraftaten"}
+{"prompt":"Ich habe Angst, dass ich geschlagen werde, gibt es Schutzmaßnahmen? ->","completion":" Körperverletzung"}
+{"prompt":"Wie wird das Alter eines Täters im Strafrecht berücksichtigt? ->","completion":" Schuldunfähigkeit"}
+{"prompt":"Inwieweit beeinflusst Schuldunfähigkeit die Dauer der Strafe? ->","completion":" Schuldunfähigkeit"}
+{"prompt":"Kann ein Täter, der unter einer geistigen Beeinträchtigung leidet, zu einer Therapie verpflichtet werden? ->","completion":" Schuldunfähigkeit"}
+{"prompt":"Ich hatte Angst um meine Sicherheit, kann ich mich verteidigen? ->","completion":" Notwehr"}
+{"prompt":"Ist es erlaubt, jemanden in Notwehr zu verletzen, um sich selbst zu schützen? ->","completion":" Notwehr"}
+{"prompt":"Ich habe gehört, dass jemand misshandelt wurde, was soll ich tun? ->","completion":" Körperverletzung"}
+{"prompt":"Ich wurde von jemandem misshandelt, wie kann ich mich wehren? ->","completion":" Körperverletzung"}
+{"prompt":"Ich wurde von jemandem verletzt, wie gehe ich damit um? ->","completion":" Körperverletzung"}
+{"prompt":"Ich habe Angst, Opfer einer körperlichen Gewalt zu werden, welche Schritte sollte ich unternehmen? ->","completion":" Körperverletzung"}
+{"prompt":"Ich wurde Opfer eines sexuellen Übergriffs, welche Unterstützung kann ich erwarten? ->","completion":" Sexualstraftaten"}
+{"prompt":"Ich wurde Opfer von sexuellem Missbrauch, welche Unterstützung kann ich erwarten? ->","completion":" Sexualstraftaten"}
+{"prompt":"Ich habe Angst, Opfer von sexueller Gewalt zu werden, welche Schutzmaßnahmen gibt es? ->","completion":" Sexualstraftaten"}
+{"prompt":"Ich wurde Opfer von sexueller Belästigung, welche Strafen drohen dem Täter? ->","completion":" Sexualstraftaten"}
+{"prompt":"Wie lange dauert die Verjährungsfrist für eine Straftat? ->","completion":" Verjährungsfrist"}
+{"prompt":"Wann beginnt die Verjährungsfrist für eine Straftat? ->","completion":" Verjährungsfrist"}
+{"prompt":"Kann die Verjährungsfrist für eine Straftat verlängert werden? ->","completion":" Verjährungsfrist"}
+{"prompt":"Wie beeinflusst die Verjährungsfrist die Strafverfolgung? ->","completion":" Verjährungsfrist"}

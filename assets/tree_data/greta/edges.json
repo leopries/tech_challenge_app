@@ -1,0 +1,82 @@
+[
+  {
+    "id": "e10",
+    "startNodeId": "0",
+    "endNodeId": "1",
+    "description": {
+      "text": "Ja"
+    }
+  },
+  {
+    "id": "e01",
+    "startNodeId": "1",
+    "endNodeId": "01",
+    "description": {
+      "text": "Ja"
+    }
+  },
+  {
+    "id": "e110",
+    "startNodeId": "1",
+    "endNodeId": "10",
+    "description": {
+      "text": "Nein"
+    }
+  },
+  {
+    "id": "e00",
+    "startNodeId": "0",
+    "endNodeId": "00",
+    "description": {
+      "text": "Nein"
+    }
+  },
+  {
+    "id": "e011",
+    "startNodeId": "01",
+    "endNodeId": "011",
+    "description": {
+      "text": "Ja"
+    }
+  },
+  {
+    "id": "e010",
+    "startNodeId": "01",
+    "endNodeId": "010",
+    "description": {
+      "text": "Nein"
+    }
+  },
+  {
+    "id": "e0101",
+    "startNodeId": "010",
+    "endNodeId": "0101",
+    "description": {
+      "text": "Ja"
+    }
+  },
+  {
+    "id": "e0100",
+    "startNodeId": "010",
+    "endNodeId": "0100",
+    "description": {
+      "text": "Nein"
+    }
+  },
+  {
+    "id": "e01011",
+    "startNodeId": "0101",
+    "endNodeId": "01011",
+    "description": {
+      "text": "Ja"
+    }
+  },
+  {
+    "id": "e01010",
+    "startNodeId": "0101",
+    "endNodeId": "01010",
+    "description": {
+      "text": "Nein"
+    }
+  }
+]

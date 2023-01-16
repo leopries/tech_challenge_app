@@ -1,0 +1,50 @@
+[
+  {
+    "id": "0",
+    "isRoot": true,
+    "question": "Okay, vorerst eine Triggerwarnung. Ich stelle dir nun Fragen, um deinen Fall genauer zu verstehen. Diese Fragen sind juristisch formuliert, damit ich dir möglichst genau mein Urteil geben kann. Ist das okay?"
+  },
+  {
+    "id": "00",
+    "question": "Dummy"
+  },
+  {
+    "id": "1",
+    "question": "Wurden gegen deinen Willen sexuelle Handlungen an Dir vorgenommen bzw. wurdest du gezwungen, Solche vorzunehmen?"
+  },
+  {
+    "id": "10",
+    "question": "Dummy"
+  },
+  {
+    "id": "01",
+    "question": "Trifft eine der folgenden Eigenschaften zu?\n\n1. Täter hat ausgenutzt, dass Du nicht in der Lage warst, einen solchen Willen auszudrücken? (z.B. alkoholisiert, ohnmächtig, KO-Tropfen)\n2.Du warst aufgrund körperlicher/geistigen Eigenschaften nicht in der Lage dazu? (z.B. gelähmt, leidest unter einer Geisteskrankheit)\n3. Hat der Täter einen Überraschungsmoment ausgenutzt? (z.B. Greifen des Geschlechsteils)\n4. Konntest du davon ausgehen, dass bei Widerstand ein empfindliches Übel droht (z.B. \"Klima der Gewalt\", häusliche Gewalt)?"
+  },
+  {
+    "id": "010",
+    "question": "Fand die Tat gegen deinen klar erkennbaren Willen statt?\n\n*Hinweis*: Als \"gegen den klar erkennbaren Willen\" wird verstanden, wenn der Wille, die sexuelle Handlung vorzunehmen/vornehmen zu lassen, für einen objektiven Betrachter erkennbar war (z.B. angeekeltest Gesicht, Wegdrehen)."
+  },
+  {
+    "id": "011",
+    "question": "Dummy"
+  },
+  {
+    "id": "0101",
+    "question": "Wurden Beischlaf oder beischlafähnliche Handlungen begangen oder wurde die Tat gemeinschaftlich begangen?\n\n*Beispiele*: Eindringen in den Körper des Opfers mit Körperglied(ern) oder Körperflüssigkeit(en)"
+  },
+  {
+    "id": "0100",
+    "question": "Dummy"
+  },
+  {
+    "id": "01010",
+    "outcome": {
+      "successful": true,
+      "outcomeResult": "*§177 (Abs. 1) Sexueller Übergriff*\n\nWer *gegen den klar erkennbaren Willen* einer anderen Person *sexuelle Handlungen an dieser Person vornimmt* oder von ihr *vornehmen lässt* oder diese Person zu *Vornahme oder Duldung sexueller Handlungen an oder von einem Dritten bestimmt*, wird mit Freiheitsstrafe von *sechs Monaten bis zu fünf Jahren* bestraft.\n\n*Bitte beachte, dass ich kein Ersatz für eine angemessene rechtliche Vertretung bin.*\nBei Seiten wie dieser https://www.advocado.de/rechtsanwalt.html kann dir eine kostenlose juristische Ersteinschätzung machen lassen. Falls du Studentin bist kannst du dich auch an die Rechtsberatung der Humboldt-Universität wenden https://www.refrat.de/beratung.recht.html. "
+    }
+  },
+  {
+    "id": "01011",
+    "question": "Dummy"
+  }
+]
