@@ -16,6 +16,11 @@ class OptionGrid extends StatelessWidget {
         }
         return Column(
           children: [
+            Container(
+              color: Colors.white,
+              height: 1,
+            ),
+            const SizedBox(height: 6),
             Text(
               'choose one option',
               style: TextStyle(
@@ -26,11 +31,25 @@ class OptionGrid extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 10),
               child: ConstrainedBox(
                   constraints: const BoxConstraints(maxHeight: 300),
-                  child: Wrap(
-                    spacing: 20,
-                    runSpacing: 20,
-                    children: buildChildrenFromState(state),
-                  )),
+                  child: FutureBuilder(
+                      future:
+                          Future.delayed(const Duration(milliseconds: 1500)),
+                      builder: (context, snapshot) {
+                        final loading =
+                            snapshot.connectionState != ConnectionState.done;
+                        return AbsorbPointer(
+                          absorbing: loading,
+                          child: AnimatedOpacity(
+                            duration: const Duration(milliseconds: 300),
+                            opacity: loading ? 0 : 1,
+                            child: Wrap(
+                              spacing: 20,
+                              runSpacing: 20,
+                              children: buildChildrenFromState(state),
+                            ),
+                          ),
+                        );
+                      })),
             ),
           ],
         );
