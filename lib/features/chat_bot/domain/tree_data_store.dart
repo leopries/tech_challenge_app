@@ -26,4 +26,11 @@ class TreeDataStore {
 
     return list;
   }
+
+  static Future<TreeNode> getSexualAssaultTreeNode() async {
+    String jsonExamplesDir = "assets/tree_data";
+
+    return await getRootTreeNode("$jsonExamplesDir/sexual_assault/nodes.json",
+        "$jsonExamplesDir/sexual_assault/edges.json");
+  }
 }

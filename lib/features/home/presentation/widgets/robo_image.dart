@@ -5,18 +5,20 @@ class RoboImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-        padding: const EdgeInsets.all(40),
-        child: FittedBox(
-            child: ConstrainedBox(
-          constraints: const BoxConstraints(minWidth: 1, minHeight: 1),
-          child: Transform.scale(
-            scale: 1.2,
-            child: Image.asset(
-              'assets/images/robot.png',
-              filterQuality: FilterQuality.high,
+    return LayoutBuilder(builder: (context, constraints) {
+      return Padding(
+          padding: EdgeInsets.all(constraints.maxHeight / 10),
+          child: FittedBox(
+              child: ConstrainedBox(
+            constraints: const BoxConstraints(minWidth: 1, minHeight: 1),
+            child: Transform.scale(
+              scale: 1.2,
+              child: Image.asset(
+                'assets/images/robot.png',
+                filterQuality: FilterQuality.high,
+              ),
             ),
-          ),
-        )));
+          )));
+    });
   }
 }

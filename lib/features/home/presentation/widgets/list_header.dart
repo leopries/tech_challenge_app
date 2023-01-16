@@ -6,7 +6,7 @@ class ListHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.all(20.0),
+      margin: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 8),
       height: 40,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
