@@ -10,7 +10,7 @@ Welcome to the Judgely, your First Contact Legal Advice App! This app is designe
 
 
 <p align="middle">
-  <iframe sandbox src="https://user-images.githubusercontent.com/49169635/214371663-610e1393-570e-4602-8fd5-3083fe368860.mp4"width="32%"></iframe>
+  <iframe sandbox src="https://user-images.githubusercontent.com/49169635/214371663-610e1393-570e-4602-8fd5-3083fe368860.mp4"></iframe>
 </p>
 
 
