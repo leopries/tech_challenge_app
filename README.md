@@ -30,7 +30,7 @@ The decision trees are created using Miro and exported to a vector PDF.
 ## Examplary Tree (Sexual Assault)
 ![Sexual Assault](/assets/tree_images/Sexualstraftaten_image.png "Sexual Assault Tree")
 
-All trees can be found [here](/assets/tree_images). Download them to zoom in or directly check our [Miro board](https://miro.com/app/board/uXjVPv5BBzo=/?share_link_id=923857402533).
+All trees can be found [here](/assets/tree_images). Download them to zoom in or directly check our [Miro board](https://miro.com/app/board/uXjVPv5BBzo=/?share_link_id=923857402533) (recommended).
 
 
 # Technical Description
