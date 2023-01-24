@@ -79,6 +79,7 @@ flutter:
     - assets/images/
     - assets/json_examples/
     - assets/tree_data/sexual_assault/
+    - assets/tree_data/greta/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

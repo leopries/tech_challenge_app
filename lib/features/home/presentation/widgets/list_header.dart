@@ -14,7 +14,7 @@ class ListHeader extends StatelessWidget {
           Expanded(
             child: FittedBox(
               child: Text(
-                "How can I help you?",
+                "Wie kann ich dir helfen?",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Theme.of(context).colorScheme.tertiary,

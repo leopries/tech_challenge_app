@@ -13,12 +13,14 @@ class GetNlpResponse implements Usecase<TreeNode, String> {
 
   @override
   Future<Either<Failure, TreeNode>> call(String input) async {
-    final response = await _repository.getNlpResponse(input);
+    return Right(await TreeDataStore.getSexualAssaultTreeNode());
 
-    return response.fold(
-      (failure) => Left(failure),
-      (response) async => await _mapResponseToPathId(response),
-    );
+    // final response = await _repository.getNlpResponse(input);
+
+    // return response.fold(
+    //   (failure) => Left(failure),
+    //   (response) async => await _mapResponseToPathId(response),
+    // );
   }
 
   Future<Either<Failure, TreeNode>> _mapResponseToPathId(

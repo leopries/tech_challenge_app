@@ -73,7 +73,7 @@ class _NLPInputTextFieldState extends State<NLPInputTextField> {
           active = value.trim().isNotEmpty;
         }),
         decoration: const InputDecoration(
-          hintText: "Please describe what happend...",
+          hintText: "Bitte beschreibe mir was passiert ist...",
           contentPadding: EdgeInsets.all(16),
           hintStyle: TextStyle(color: Colors.grey),
           border: InputBorder.none,

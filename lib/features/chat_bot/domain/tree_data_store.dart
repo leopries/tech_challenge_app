@@ -32,5 +32,11 @@ class TreeDataStore {
 
     return await getRootTreeNode("$jsonExamplesDir/sexual_assault/nodes.json",
         "$jsonExamplesDir/sexual_assault/edges.json");
+
+    // String jsonExamplesDir = "assets/tree_data";
+
+    // await Future.delayed(const Duration(seconds: 3));
+    // return await getRootTreeNode("$jsonExamplesDir/greta/nodes.json",
+    //     "$jsonExamplesDir/greta/edges.json");
   }
 }

@@ -61,6 +61,12 @@ class ChatBotBloc extends Bloc<ChatBotEvent, ChatBotState> {
           ),
         ),
       );
+      emit(
+        ChatBotFinal(
+          treeNode: newNode,
+          message: newNode.decisionOutcome!.outcomeResult!,
+        ),
+      );
     } else if (newNode.decisionOutcome != null &&
         !newNode.decisionOutcome!.successful) {
       chatBloc.add(
