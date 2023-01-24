@@ -9,9 +9,11 @@
 Welcome to the Judgely, your First Contact Legal Advice App! This app is designed to help individuals who have experienced a crime or are unsure if they have experienced a crime to get a first idea of which paragraph of German law the crime may fall under. 
 
 
-<p align="middle">
-  <img src="https://github.com/leopries/tech_challenge_app/blob/main/assets/judgely_app.mp4?raw=true"width="32%" />
-</p>
+
+
+https://user-images.githubusercontent.com/49169635/214387095-c01f26bd-6fd1-41d2-9b18-604eb9babf93.mp4
+
+
 
 
 ## How to Use the App 
