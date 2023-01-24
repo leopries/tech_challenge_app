@@ -32,6 +32,9 @@ The decision trees are created using Miro and exported to a vector PDF.
 
 All trees can be found [here](/assets/tree_images).
 
+The corresponding Miro board can be found here:
+<iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVPv5BBzo=/?moveToViewport=287981,-8808,178262,90616&embedId=106447988804" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
+
 
 # Technical Description
 
