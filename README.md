@@ -24,6 +24,15 @@ Welcome to the Judgely, your First Contact Legal Advice App! This app is designe
 
 We understand that experiencing a crime can be difficult and stressful, and our goal is to provide you with the information and resources you need to navigate the legal system as smoothly as possible.  If you have any questions or feedback, please do not hesitate to reach out to us.
 
+# Raw Decision Trees
+The decision trees are created using Miro and exported to a vector PDF.
+
+## Examplary Tree (Sexual Assault)
+![Sexual Assault](/assets/tree_images/Sexualstraftaten_image.png "Sexual Assault Tree")
+
+All trees can be found [here](/assets/tree_images).
+
+
 # Technical Description
 
 <p align="center">
