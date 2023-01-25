@@ -85,7 +85,7 @@ class SOSDialog extends StatelessWidget {
                           aspectRatio: 1,
                           child: OptionItem(
                             imgPath: "assets/images/lawyer.png",
-                            text: "Rechts-beratung",
+                            text: "Rechtsberatung",
                             onTap: (context) => launch("tel:+490000000"),
                           ),
                         ),

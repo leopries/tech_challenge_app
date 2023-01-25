@@ -123,7 +123,7 @@ class _NLPInputTextFieldState extends State<NLPInputTextField> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const [
                     Text(
-                      "Send",
+                      "Abschicken",
                       style: TextStyle(color: Colors.white),
                     ),
                     SizedBox(width: 6),

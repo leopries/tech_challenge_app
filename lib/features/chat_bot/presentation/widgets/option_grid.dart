@@ -22,7 +22,7 @@ class OptionGrid extends StatelessWidget {
             ),
             const SizedBox(height: 6),
             Text(
-              'choose one option',
+              'Wähle eine Option',
               style: TextStyle(
                 color: Theme.of(context).colorScheme.tertiary.withOpacity(0.3),
               ),
