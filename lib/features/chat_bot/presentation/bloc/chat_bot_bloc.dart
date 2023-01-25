@@ -73,7 +73,7 @@ class ChatBotBloc extends Bloc<ChatBotEvent, ChatBotState> {
         ChatEventAddMessage(
           chatMessage: ChatMessage(
             text:
-                "Tut mir leid, leider kann ich deine Beschreibung keinen Paragrafen zuordnen.\n\nBitte wende dich an eine Studentischen Rechtsberatungen um deine Frage zu klären",
+                "Tut mir leid, leider kann ich deine Beschreibung keinen Paragrafen zuordnen.\n\nBitte wende dich an eine (studentische) Rechtsberatung, um deine Frage zu klären.",
             owner: MessageOwner.robot,
             id: const Uuid().v4(),
           ),

@@ -1,42 +1,177 @@
 [
     {
-        "id": "0",
-        "isRoot": true,
-        "question": "Wurden gegen deinen Willen sexuelle Handlungen an Dir vorgenommen bzw. wurdest du gezwungen, Solche vorzunehmen?"
+      "id": "0",
+      "isRoot": true,
+      "question": "Okay, vorerst eine Triggerwarnung. Ich stelle dir nun Fragen, um deinen Fall genauer zu verstehen. Diese Fragen sind juristisch formuliert, damit ich dir möglichst genau mein Urteil geben kann. Ist das okay?"
     },
     {
-        "id": "00",
-        "question": "Dummy"
+      "id": "00",
+      "outcome": {
+        "successful": true,
+        "outcomeResult": "*Hinweis*\n\nHier kannst du direkt eine Rechtsberatung kontaktieren."
+      }
     },
     {
-        "id": "01",
-        "question": "Trifft eine der folgenden Eigenschaften zu?\n\n1. Täter hat ausgenutzt, dass Du nicht in der Lage warst, einen solchen Willen auszudrücken? (z.B. alkoholisiert, ohnmächtig, KO-Tropfen)\n2.Du warst aufgrund körperlicher/geistigen Eigenschaften nicht in der Lage dazu? (z.B. gelähmt, leidest unter einer Geisteskrankheit)\n3. Hat der Täter einen Überraschungsmoment ausgenutzt? (z.B. Greifen des Geschlechsteils)\n4. Konntest du davon ausgehen, dass bei Widerstand ein empfindliches Übel droht (z.B. \"Klima der Gewalt\", häusliche Gewalt)?"
+      "id": "1",
+      "question": "Wurden gegen deinen Willen sexuelle Handlungen an Dir vorgenommen bzw. wurdest du gezwungen, Solche vorzunehmen?"
     },
     {
-        "id": "010",
-        "question": "Fand die Tat gegen deinen klar erkennbaren Willen statt?\n\n*Hinweis*: Als \"gegen den klar erkennbaren Willen\" wird verstanden, wenn der Wille, die sexuelle Handlung vorzunehmen/vornehmen zu lassen, für einen objektiven Betrachter erkennbar war (z.B. angeekeltest Gesicht, Wegdrehen)."
+      "id": "11",
+      "question": "Trifft eine der folgenden Eigenschaften zu?\n\n1. Täter hat ausgenutzt, dass Du nicht in der Lage warst, einen solchen Willen auszudrücken? (z.B. alkoholisiert, ohnmächtig, KO-Tropfen)\n2.Du warst aufgrund körperlicher/geistigen Eigenschaften nicht in der Lage dazu? (z.B. gelähmt, leidest unter einer Geisteskrankheit)\n3. Hat der Täter einen Überraschungsmoment ausgenutzt? (z.B. Greifen des Geschlechsteils)\n4. Konntest du davon ausgehen, dass bei Widerstand ein empfindliches Übel droht (z.B. \"Klima der Gewalt\", häusliche Gewalt)?"
     },
     {
-        "id": "011",
-        "question": "Dummy"
+      "id": "111",
+      "question": "Trifft eine der folgenden Eigenschaften zu?\n\n1. Der Täter hat Gewalt angewendet.\n2.Es hat eine gegenwärtige Gefahr des Todes gedroht.\n3. Der Täter hat eine Lage ausgenutzt, in dem Du dem Einwirken der Täter/in schutzlos ausgeliefert warst(z.B. Einschließen in einen Raum)."
     },
     {
-        "id": "0101",
-        "question": "Wurden Beischlaf oder beischlafähnliche Handlungen begangen oder wurde die Tat gemeinschaftlich begangen?\n\n*Beispiele*: Eindringen in den Körper des Opfers mit Körperglied(ern) oder Körperflüssigkeit(en)"
+      "id": "1111",
+      "question": "Wurden Beischlaf oder beischlafähnliche Handlungen begangen oder wurde die Tat gemeinschaftlich begangen?\n\n*Beispiele*: Eindringen in den Körper des Opfers mit Körperglied(ern) oder Körperflüssigkeit(en)"
     },
     {
-        "id": "0100",
-        "question": "Dummy"
+      "id": "11111",
+      "outcome": {
+        "successful": true,
+        "outcomeResult": "*§177 (Abs. 6) Vergewaltigung*\n\nIm Falle einer Vergewaltigung droht eine *Freiheitsstrafe von zwei bis zu fünfzehn Jahren*.\n- Führte die Beschuldigte/r bei sich oder hat er Dich der Gefahr ausgesetzt, sich mit einer Geschlechtheitskrankheit zu infizieren, darf das Strafmaß fünf Jahre nicht unterschreiten.\n- Nicht definitiv beschrieben, ob Eindringen mittels eines Fingers auch darunter zählt. Derzeitige Rechtssprechung bejaht allerdings meistens diese Frage."
+      }
     },
     {
-        "id": "01010",
-        "outcome": {
-            "successful": true,
-            "outcomeResult": "*§177 (Abs. 1) Sexueller Übergriff*\n\nWer *gegen den klar erkennbaren Willen* einer anderen Person *sexuelle Handlungen an dieser Person vornimmt* oder von ihr *vornehmen lässt* oder diese Person zu *Vornahme oder Duldung sexueller Handlungen an oder von einem Dritten bestimmt*, wird mit Freiheitsstrafe von *sechs Monaten bis zu fünf Jahren* bestraft."
-        }
+      "id": "11110",
+      "outcome": {
+        "successful": true,
+        "outcomeResult": "*§177 (Abs. 5) Sexuelle Nötigung*\n\nDie *sexuelle Nötigung* ist eine *schwere Form des sexuellen Übergriffs (Abs. 1)* oder des *sexuellen Ausnutzens sonstiger Umstände (Abs. 2)*. Aufgrund der gewählten Qualifikationen liegt das Strafmaß zwischen *einem und fünfzehn Jahren*."
+      }
     },
     {
-        "id": "01011",
-        "question": "Dummy"
+      "id": "1110",
+      "question": "Wurden Beischlaf oder beischlafähnliche Handlungen begangen oder wurde die Tat gemeinschaftlich begangen?\n\n*Beispiele*: Eindringen in den Körper des Opfers mit Körperglied(ern) oder Körperflüssigkeit(en)"
+    },
+    {
+      "id": "11101",
+      "outcome": {
+        "successful": true,
+        "outcomeResult": "*§177 (Abs. 6) Vergewaltigung*\n\nIm Falle einer Vergewaltigung droht eine *Freiheitsstrafe von zwei bis zu fünfzehn Jahren*.\n- Führte die Beschuldigte/r bei sich oder hat er Dich der Gefahr ausgesetzt, sich mit einer Geschlechtheitskrankheit zu infizieren, darf das Strafmaß fünf Jahre nicht unterschreiten.\n- Nicht definitiv beschrieben, ob Eindringen mittels eines Fingers auch darunter zählt. Derzeitige Rechtssprechung bejaht allerdings meistens diese Frage."
+      }
+    },
+    {
+      "id": "11100",
+      "outcome": {
+        "successful": true,
+        "outcomeResult": "*§177 (Abs. 5) Sexuelle Ausnutzung sonstiger Umstände*\n\n[...] wird bestraft, wer sexuelle Handlungen an einer anderen Person vornimmt oder von ihr vornehmen lässt oder diese Person zur Vornahme oder Duldung sexueller Handlungen an oder von einem dritten bestimmt, wenn\n1. der Täter ausnutzt, dass die Person nicht in der Lage ist, einen entgegenstehenden Willen zu bilden or zu äußern,\n2.der Täter ausnutzt, dass die Person auf Grund ihres körperlichen oder psychischen Zustandes in der Bildung oder Äußerung des Willens erheblich eingeschränkt ist, es sei denn, er hat sicher der Zustimmung dieser Person versichert,\n3. der Täter einen Überraschungsmoment ausnutzt,\n4. der Täter eine Lage ausnutzt, in der dem Opfer bei Widerstand erhebliches Übel droht, oder\n5. der Täter die Person zur Vornahme oder Duldung der sexuellen Handlung durch Drohung mit einem empfindlichen Übel genötigt hat."
+      }
+    },
+    {
+      "id": "110",
+      "question": "Fand die Tat gegen deinen klar erkennbaren Willen statt?\n\n*Hinweis*: Als \"gegen den klar erkennbaren Willen\" wird verstanden, wenn der Wille, die sexuelle Handlung vorzunehmen/vornehmen zu lassen, für einen objektiven Betrachter erkennbar war (z.B. angeekeltest Gesicht, Wegdrehen)."
+    },
+    {
+      "id": "1101",
+      "question": "Wurden Beischlaf oder beischlafähnliche Handlungen begangen oder wurde die Tat gemeinschaftlich begangen?\n\n*Beispiele*: Eindringen in den Körper des Opfers mit Körperglied(ern) oder Körperflüssigkeit(en)"
+    },
+    {
+      "id": "11011",
+      "outcome": {
+        "successful": true,
+        "outcomeResult": "*§177 (Abs. 6) Vergewaltigung*\n\nIm Falle einer Vergewaltigung droht eine *Freiheitsstrafe von zwei bis zu fünfzehn Jahren*.\n- Führte die Beschuldigte/r bei sich oder hat er Dich der Gefahr ausgesetzt, sich mit einer Geschlechtheitskrankheit zu infizieren, darf das Strafmaß fünf Jahre nicht unterschreiten.\n- Nicht definitiv beschrieben, ob Eindringen mittels eines Fingers auch darunter zählt. Derzeitige Rechtssprechung bejaht allerdings meistens diese Frage."
+      }
+    },
+    {
+      "id": "11010",
+      "outcome": {
+        "successful": true,
+        "outcomeResult": "*§177 (Abs. 1) Sexueller Übergriff*\n\nWer *gegen den klar erkennbaren Willen* einer anderen Person *sexuelle Handlungen an dieser Person vornimmt* oder von ihr *vornehmen lässt* oder diese Person zu *Vornahme oder Duldung sexueller Handlungen an oder von einem Dritten bestimmt*, wird mit Freiheitsstrafe von *sechs Monaten bis zu fünf Jahren* bestraft."
+      }
+    },
+    {
+      "id": "1100",
+      "outcome": {
+        "successful": false
+      }
+    },
+  
+    
+  
+  
+  
+    {
+      "id": "10",
+      "question": "Hat der Täter das versucht?"
+    },
+    {
+      "id": "101",
+      "question": "Trifft eine der folgenden Eigenschaften zu?\n\n1. Täter wollte ausnutzen, dass du nicht in der Lage warst, einen solchen Willen auszudrücken (zB. alkoholisiert, ohnmächtig, KO-Tropfen)\n2.Du wärst aufgrund körperlicher/geistigen Eigenschaften nicht in der Lage dazu gewesen? (z.B. gelähmt, leidest unter einer Geisteskrankheit)\n3. Hat der Täter versucht, einen Überraschungsmoment ausgenutzt?\n4. Hättest du davon ausgehen können, dass bei Widerstand ein empfindliches Übel droht (z.B. \"Klima der Gewalt\", häusliche Gewalt)?"
+    },
+    {
+      "id": "1011",
+      "question": "Trifft eine der folgenden Eigenschaften zu?\n\n1. Der Täter wollte oder hat Gewalt angewendet.\n2.Es hätte eine gegenwärtige Gefahr des Todes gedroht.\n3. Der Täter hat versucht, eine Lage auszunutzen, in der Du dem Einwirken des Täters schutzlos ausgeliefert wärst (z.B. Einschließen in einen Raum)."
+    },
+    {
+      "id": "10111",
+      "question": "Hat der Täter versucht, Beischlaf oder beischlafähnliche Handlungen zu begehen oder wurde versucht, die Tat gemeinschaftlich zu begehen?\n\n*Beispiele*: Eindringen in den Körper des Opfers mit Körperglied(ern) oder Körperflüssigkeit(en)"
+    },
+    {
+      "id": "101111",
+      "outcome": {
+        "successful": true,
+        "outcomeResult": "*§177 (Abs. 6) Vergewaltigung*\n\nIm Falle einer Vergewaltigung droht eine *Freiheitsstrafe von zwei bis zu fünfzehn Jahren*.\n- Führte die Beschuldigte/r bei sich oder hat er Dich der Gefahr ausgesetzt, sich mit einer Geschlechtheitskrankheit zu infizieren, darf das Strafmaß fünf Jahre nicht unterschreiten.\n- Nicht definitiv beschrieben, ob Eindringen mittels eines Fingers auch darunter zählt. Derzeitige Rechtssprechung bejaht allerdings meistens diese Frage."
+      }
+    },
+    {
+      "id": "101110",
+      "outcome": {
+        "successful": true,
+        "outcomeResult": "*§177 (Abs. 5) Sexuelle Nötigung*\n\nDie *sexuelle Nötigung* ist eine *schwere Form des sexuellen Übergriffs (Abs. 1)* oder des *sexuellen Ausnutzens sonstiger Umstände (Abs. 2)*. Aufgrund der gewählten Qualifikationen liegt das Strafmaß zwischen *einem und fünfzehn Jahren*."
+      }
+    },
+    {
+      "id": "10110",
+      "question": "Hat der Täter versucht, Beischlaf oder beischlafähnliche Handlungen zu begehen oder wurde versucht, die Tat gemeinschaftlich zu begehen?\n\n*Beispiele*: Eindringen in den Körper des Opfers mit Körperglied(ern) oder Körperflüssigkeit(en)"
+    },
+    {
+      "id": "101101",
+      "outcome": {
+        "successful": true,
+        "outcomeResult": "*§177 (Abs. 6) Vergewaltigung*\n\nIm Falle einer Vergewaltigung droht eine *Freiheitsstrafe von zwei bis zu fünfzehn Jahren*.\n- Führte die Beschuldigte/r bei sich oder hat er Dich der Gefahr ausgesetzt, sich mit einer Geschlechtheitskrankheit zu infizieren, darf das Strafmaß fünf Jahre nicht unterschreiten.\n- Nicht definitiv beschrieben, ob Eindringen mittels eines Fingers auch darunter zählt. Derzeitige Rechtssprechung bejaht allerdings meistens diese Frage."
+      }
+    },
+    {
+      "id": "101100",
+      "outcome": {
+        "successful": true,
+        "outcomeResult": "*§177 (Abs. 5) Sexuelle Ausnutzung sonstiger Umstände*\n\n[...] wird bestraft, wer sexuelle Handlungen an einer anderen Person vornimmt oder von ihr vornehmen lässt oder diese Person zur Vornahme oder Duldung sexueller Handlungen an oder von einem dritten bestimmt, wenn\n1. der Täter ausnutzt, dass die Person nicht in der Lage ist, einen entgegenstehenden Willen zu bilden or zu äußern,\n2.der Täter ausnutzt, dass die Person auf Grund ihres körperlichen oder psychischen Zustandes in der Bildung oder Äußerung des Willens erheblich eingeschränkt ist, es sei denn, er hat sicher der Zustimmung dieser Person versichert,\n3. der Täter einen Überraschungsmoment ausnutzt,\n4. der Täter eine Lage ausnutzt, in der dem Opfer bei Widerstand erhebliches Übel droht, oder\n5. der Täter die Person zur Vornahme oder Duldung der sexuellen Handlung durch Drohung mit einem empfindlichen Übel genötigt hat."
+      }
+    },
+    {
+      "id": "1010",
+      "question": "Wurde die Tat gegen deinen klar erkennbaren Willen versucht?\n\n*Hinweis*: Als \"gegen den klar erkennbaren Willen\" wird verstanden, wenn der Wille, die sexuelle Handlung vorzunehmen/vornehmen zu lassen, für einen objektiven Betrachter erkennbar war (z.B. angeekeltest Gesicht, Wegdrehen)."
+    },
+    {
+      "id": "10101",
+      "question": "Hat der Täter versucht, Beischlaf oder beischlafähnliche Handlungen zu begehen oder wurde versucht, die Tat gemeinschaftlich zu begehen?\n\n*Beispiele*: Eindringen in den Körper des Opfers mit Körperglied(ern) oder Körperflüssigkeit(en)"
+    },
+    {
+      "id": "101011",
+      "outcome": {
+        "successful": true,
+        "outcomeResult": "*§177 (Abs. 6) Vergewaltigung*\n\nIm Falle einer Vergewaltigung droht eine *Freiheitsstrafe von zwei bis zu fünfzehn Jahren*.\n- Führte die Beschuldigte/r bei sich oder hat er Dich der Gefahr ausgesetzt, sich mit einer Geschlechtheitskrankheit zu infizieren, darf das Strafmaß fünf Jahre nicht unterschreiten.\n- Nicht definitiv beschrieben, ob Eindringen mittels eines Fingers auch darunter zählt. Derzeitige Rechtssprechung bejaht allerdings meistens diese Frage."
+      }
+    },
+    {
+      "id": "101010",
+      "outcome": {
+        "successful": true,
+        "outcomeResult": "*§177 (Abs. 1) Sexueller Übergriff*\n\nWer *gegen den klar erkennbaren Willen* einer anderen Person *sexuelle Handlungen an dieser Person vornimmt* oder von ihr *vornehmen lässt* oder diese Person zu *Vornahme oder Duldung sexueller Handlungen an oder von einem Dritten bestimmt*, wird mit Freiheitsstrafe von *sechs Monaten bis zu fünf Jahren* bestraft."
+      }
+    },
+    {
+      "id": "10100",
+      "outcome": {
+        "successful": false
+      }
+    },
+    {
+      "id": "100",
+      "outcome": {
+        "successful": false
+      }
     }
-]
+  ]
